@@ -16,6 +16,12 @@
 		06ACF880203F611E00FACA7C /* biubiubiuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06ACF87F203F611E00FACA7C /* biubiubiuTests.swift */; };
 		06ACF88B203F611E00FACA7C /* biubiubiuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06ACF88A203F611E00FACA7C /* biubiubiuUITests.swift */; };
 		06ACF899203F630B00FACA7C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 06ACF898203F630B00FACA7C /* GoogleService-Info.plist */; };
+		06ACF8A7203F68F300FACA7C /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06ACF8A5203F68F200FACA7C /* OnboardingViewController.swift */; };
+		06ACF8A8203F68F300FACA7C /* OnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06ACF8A6203F68F300FACA7C /* OnboardingViewController.xib */; };
+		06ACF8AB203F694700FACA7C /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06ACF8A9203F694700FACA7C /* LoadingViewController.swift */; };
+		06ACF8AC203F694700FACA7C /* LoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06ACF8AA203F694700FACA7C /* LoadingViewController.xib */; };
+		06ACF8AF203F69AF00FACA7C /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06ACF8AD203F69AF00FACA7C /* LandingViewController.swift */; };
+		06ACF8B0203F69AF00FACA7C /* LandingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06ACF8AE203F69AF00FACA7C /* LandingViewController.xib */; };
 		47C0750AF81CC1FECC119C90 /* Pods_biubiubiu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841FA6FE85EDD39153E09B14 /* Pods_biubiubiu.framework */; };
 		588EC76907E5B74472AD2C93 /* Pods_biubiubiuTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C3421C6CA03DFF27D0C6795 /* Pods_biubiubiuTests.framework */; };
 		AF3EF5C291114F1B50211FCF /* Pods_biubiubiuUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F851FAC0658FA7D525F44698 /* Pods_biubiubiuUITests.framework */; };
@@ -54,6 +60,12 @@
 		06ACF88A203F611E00FACA7C /* biubiubiuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = biubiubiuUITests.swift; sourceTree = "<group>"; };
 		06ACF88C203F611E00FACA7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06ACF898203F630B00FACA7C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		06ACF8A5203F68F200FACA7C /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OnboardingViewController.swift; path = Onboarding/OnboardingViewController.swift; sourceTree = "<group>"; };
+		06ACF8A6203F68F300FACA7C /* OnboardingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OnboardingViewController.xib; path = Onboarding/OnboardingViewController.xib; sourceTree = "<group>"; };
+		06ACF8A9203F694700FACA7C /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoadingViewController.swift; path = Loading/LoadingViewController.swift; sourceTree = "<group>"; };
+		06ACF8AA203F694700FACA7C /* LoadingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = LoadingViewController.xib; path = Loading/LoadingViewController.xib; sourceTree = "<group>"; };
+		06ACF8AD203F69AF00FACA7C /* LandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LandingViewController.swift; path = biubiubiu/Landing/LandingViewController.swift; sourceTree = SOURCE_ROOT; };
+		06ACF8AE203F69AF00FACA7C /* LandingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = LandingViewController.xib; path = biubiubiu/Landing/LandingViewController.xib; sourceTree = SOURCE_ROOT; };
 		0A4B9BAB328FA0D27A65D758 /* Pods-biubiubiu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-biubiubiu.release.xcconfig"; path = "Pods/Target Support Files/Pods-biubiubiu/Pods-biubiubiu.release.xcconfig"; sourceTree = "<group>"; };
 		58F2C55483E1886A8E7E45E1 /* Pods-biubiubiuUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-biubiubiuUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-biubiubiuUITests/Pods-biubiubiuUITests.release.xcconfig"; sourceTree = "<group>"; };
 		78E7ABD82F3C76660B107D57 /* Pods-biubiubiuUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-biubiubiuUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-biubiubiuUITests/Pods-biubiubiuUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -119,6 +131,11 @@
 			isa = PBXGroup;
 			children = (
 				06ACF867203F611E00FACA7C /* AppDelegate.swift */,
+				06ACF8A0203F686900FACA7C /* Onboarding */,
+				06ACF89F203F685D00FACA7C /* Loading */,
+				06ACF89C203F67BD00FACA7C /* Landing */,
+				06ACF89E203F67EC00FACA7C /* Account */,
+				06ACF89D203F67C700FACA7C /* Lobby */,
 				06ACF89B203F664600FACA7C /* Base Models */,
 				06ACF89A203F661400FACA7C /* Support Files */,
 			);
@@ -162,6 +179,49 @@
 				06ACF869203F611E00FACA7C /* SuperViewController.swift */,
 			);
 			path = "Base Models";
+			sourceTree = "<group>";
+		};
+		06ACF89C203F67BD00FACA7C /* Landing */ = {
+			isa = PBXGroup;
+			children = (
+				06ACF8AD203F69AF00FACA7C /* LandingViewController.swift */,
+				06ACF8AE203F69AF00FACA7C /* LandingViewController.xib */,
+			);
+			name = Landing;
+			path = "Base Models";
+			sourceTree = "<group>";
+		};
+		06ACF89D203F67C700FACA7C /* Lobby */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Lobby;
+			path = "Base Models";
+			sourceTree = "<group>";
+		};
+		06ACF89E203F67EC00FACA7C /* Account */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		06ACF89F203F685D00FACA7C /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				06ACF8A9203F694700FACA7C /* LoadingViewController.swift */,
+				06ACF8AA203F694700FACA7C /* LoadingViewController.xib */,
+			);
+			name = Loading;
+			sourceTree = "<group>";
+		};
+		06ACF8A0203F686900FACA7C /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				06ACF8A5203F68F200FACA7C /* OnboardingViewController.swift */,
+				06ACF8A6203F68F300FACA7C /* OnboardingViewController.xib */,
+			);
+			name = Onboarding;
 			sourceTree = "<group>";
 		};
 		1E1013ED7390A10AC147EC5E /* Pods */ = {
@@ -304,9 +364,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				06ACF875203F611E00FACA7C /* LaunchScreen.storyboard in Resources */,
+				06ACF8B0203F69AF00FACA7C /* LandingViewController.xib in Resources */,
 				06ACF872203F611E00FACA7C /* Assets.xcassets in Resources */,
 				06ACF86D203F611E00FACA7C /* Main.storyboard in Resources */,
+				06ACF8AC203F694700FACA7C /* LoadingViewController.xib in Resources */,
 				06ACF899203F630B00FACA7C /* GoogleService-Info.plist in Resources */,
+				06ACF8A8203F68F300FACA7C /* OnboardingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,6 +548,9 @@
 			files = (
 				06ACF86A203F611E00FACA7C /* SuperViewController.swift in Sources */,
 				06ACF868203F611E00FACA7C /* AppDelegate.swift in Sources */,
+				06ACF8AB203F694700FACA7C /* LoadingViewController.swift in Sources */,
+				06ACF8A7203F68F300FACA7C /* OnboardingViewController.swift in Sources */,
+				06ACF8AF203F69AF00FACA7C /* LandingViewController.swift in Sources */,
 				06ACF870203F611E00FACA7C /* biubiubiu.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
