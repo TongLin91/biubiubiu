@@ -13,7 +13,7 @@ class LandingViewController: SuperViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.view.backgroundColor = .black
+        self.view.backgroundColor = .gray
     }
 
     

@@ -20,13 +20,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         FirebaseApp.configure()
         
-        self.window = UIWindow(frame: UIScreen.main.bounds)
-        let landing = LandingViewController()
-        self.window?.rootViewController = landing
-        self.window?.makeKeyAndVisible()
-        landing.present(LoadingViewController(), animated: false, completion: nil)
+        
+        self.appInitLoading()
         
         return true
+    }
+    
+    func appInitLoading() {
+        let loading = LoadingViewController()
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.rootViewController = loading
+        self.window?.makeKeyAndVisible()
+    }
+    
+    func presentLanding() {
+        let landing = LandingViewController()
+        self.window?.rootViewController = landing
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

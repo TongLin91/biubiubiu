@@ -29,6 +29,9 @@ class LoadingViewController: SuperViewController {
     }
     
     func finishAnimate() {
-        self.dismiss(animated: true, completion: nil)
+        let delegate = UIApplication.shared.delegate as! AppDelegate
+        delegate.presentLanding()
+//        self.dismiss(animated: true) {
+//        }
     }
 }
