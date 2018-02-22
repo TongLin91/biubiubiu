@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+//base view controller
 class SuperViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -22,7 +22,5 @@ class SuperViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 
