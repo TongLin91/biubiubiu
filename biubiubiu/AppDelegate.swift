@@ -21,8 +21,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        self.window?.rootViewController = SuperViewController()
+        let landing = LandingViewController()
+        self.window?.rootViewController = landing
         self.window?.makeKeyAndVisible()
+        landing.present(LoadingViewController(), animated: false, completion: nil)
         
         return true
     }
