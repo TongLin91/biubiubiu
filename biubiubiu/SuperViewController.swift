@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  SuperViewController.swift
 //  biubiubiu
 //
 //  Created by Tong Lin on 2/22/18.
@@ -8,11 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SuperViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        self.view.backgroundColor = UIColor.green
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

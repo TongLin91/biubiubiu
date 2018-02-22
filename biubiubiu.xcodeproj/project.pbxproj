@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		06ACF868203F611E00FACA7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06ACF867203F611E00FACA7C /* AppDelegate.swift */; };
-		06ACF86A203F611E00FACA7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06ACF869203F611E00FACA7C /* ViewController.swift */; };
+		06ACF86A203F611E00FACA7C /* SuperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06ACF869203F611E00FACA7C /* SuperViewController.swift */; };
 		06ACF86D203F611E00FACA7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06ACF86B203F611E00FACA7C /* Main.storyboard */; };
 		06ACF870203F611E00FACA7C /* biubiubiu.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 06ACF86E203F611E00FACA7C /* biubiubiu.xcdatamodeld */; };
 		06ACF872203F611E00FACA7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06ACF871203F611E00FACA7C /* Assets.xcassets */; };
@@ -41,7 +41,7 @@
 /* Begin PBXFileReference section */
 		06ACF864203F611E00FACA7C /* biubiubiu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = biubiubiu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06ACF867203F611E00FACA7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		06ACF869203F611E00FACA7C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		06ACF869203F611E00FACA7C /* SuperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperViewController.swift; sourceTree = "<group>"; };
 		06ACF86C203F611E00FACA7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		06ACF86F203F611E00FACA7C /* biubiubiu.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = biubiubiu.xcdatamodel; sourceTree = "<group>"; };
 		06ACF871203F611E00FACA7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -119,7 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				06ACF867203F611E00FACA7C /* AppDelegate.swift */,
-				06ACF869203F611E00FACA7C /* ViewController.swift */,
+				06ACF869203F611E00FACA7C /* SuperViewController.swift */,
 				06ACF86B203F611E00FACA7C /* Main.storyboard */,
 				06ACF871203F611E00FACA7C /* Assets.xcassets */,
 				06ACF873203F611E00FACA7C /* LaunchScreen.storyboard */,
@@ -467,7 +467,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				06ACF86A203F611E00FACA7C /* ViewController.swift in Sources */,
+				06ACF86A203F611E00FACA7C /* SuperViewController.swift in Sources */,
 				06ACF868203F611E00FACA7C /* AppDelegate.swift in Sources */,
 				06ACF870203F611E00FACA7C /* biubiubiu.xcdatamodeld in Sources */,
 			);
@@ -639,6 +639,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7NBTE6SY4Z;
 				INFOPLIST_FILE = biubiubiu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tonglin.t91.biubiubiu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -655,6 +656,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7NBTE6SY4Z;
 				INFOPLIST_FILE = biubiubiu/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tonglin.t91.biubiubiu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
