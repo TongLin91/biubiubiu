@@ -38,8 +38,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func presentLanding() {
-        let landing = LandingViewController()
-        self.window?.rootViewController = landing
+        let mainController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "GroundControlViewControllerIdentifier") as! GroundControlViewController
+        self.window?.rootViewController = mainController
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
