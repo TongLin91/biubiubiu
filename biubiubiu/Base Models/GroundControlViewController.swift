@@ -19,13 +19,16 @@ class GroundControlViewController: UIViewController {
         super.viewDidLoad()
         
         self.helper = GroundControlHelper(self)
-        
-        ref.child("BiuPlayer").child(UIDevice.current.identifierForVendor!.uuidString).observeSingleEvent(of: .value, with: { (snapShot) in
-            if let value = snapShot.value {
-                // skip landing redirect to lobby
+//        createSampleUser()
+        fetchUserInfo()
+    }
+    
+    func fetchUserInfo() {
+        ref.child("BiuPlayer").child(UIDevice.current.identifierForVendor!.uuidString).observeSingleEvent(of: .value, with: { (snapshot) in
+            if let value = snapshot.value, let user = BiuUser.parsingValue(value) {
+                dump(user)
                 
             } else {
-                // wrong data?
                 self.initNewUserView()
             }
             
@@ -34,9 +37,15 @@ class GroundControlViewController: UIViewController {
             print(error.localizedDescription)
         }
     }
-    
     func initNewUserView() {
         let landing = LandingViewController(nibName: "LandingViewController", bundle: nil)
         helper.push(landing)
     }
+    
+    func createSampleUser() {
+        let user = BiuUser(name: "Master", invitedBy: "me")
+        
+        ref.child("BiuPlayer").child(UIDevice.current.identifierForVendor!.uuidString).updateChildValues(user.dictionary)
+    }
+    
 }
