@@ -8,6 +8,8 @@ target 'biubiubiu' do
   # Pods for biubiubiu
   pod 'Firebase/Core'
   pod 'Firebase/Auth'
+  pod 'Firebase/Database'
+  
   target 'biubiubiuTests' do
     inherit! :search_paths
     # Pods for testing

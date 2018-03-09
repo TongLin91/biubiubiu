@@ -15,15 +15,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
-        
-        Auth.auth().signInAnonymously { (user, error) in
-            //Parsing user model
-            
-        }
+        Auth.auth().signInAnonymously(completion: nil)
         
         self.appInitLoading()
         

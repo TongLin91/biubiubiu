@@ -20,17 +20,29 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VHh-BS-2cU">
-                    <rect key="frame" x="156.5" y="323" width="62" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M8j-jH-cVS">
+                    <rect key="frame" x="0.0" y="20" width="375" height="592"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VHh-BS-2cU">
+                            <rect key="frame" x="156.5" y="285.5" width="62" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="VHh-BS-2cU" firstAttribute="centerX" secondItem="M8j-jH-cVS" secondAttribute="centerX" id="Nid-YA-5Ha"/>
+                        <constraint firstItem="VHh-BS-2cU" firstAttribute="centerY" secondItem="M8j-jH-cVS" secondAttribute="centerY" id="dAU-PG-cIt"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="VHh-BS-2cU" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Pbj-A8-gJe"/>
-                <constraint firstItem="VHh-BS-2cU" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="b0D-5g-p3s"/>
+                <constraint firstItem="M8j-jH-cVS" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="RQZ-n1-MK8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="M8j-jH-cVS" secondAttribute="bottom" constant="55" id="Wmc-a8-2ad"/>
+                <constraint firstItem="M8j-jH-cVS" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="g6O-rW-Aj5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="M8j-jH-cVS" secondAttribute="trailing" id="vio-IK-SK6"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>

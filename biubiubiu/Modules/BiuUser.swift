@@ -8,6 +8,22 @@
 
 import Foundation
 
-class BiuUser: NSObject {
-    override init() { }
+class BiuUser: NSObject, Codable {
+    var displayName: String?
+    var dateJoined: Date?
+    var invitedBy: String?
+    var avatar: String?
+    var friendList: [String] = []
+    
+    private enum CodingKeys: String, CodingKey {
+        case displayName
+        case dateJoined
+        case invitedBy
+        case avatar
+        case friendList
+    }
+    
+    override init() {
+        super.init()
+    }
 }
