@@ -11,6 +11,7 @@ import FirebaseDatabase
 
 class GroundControlViewController: UIViewController {
     
+    let nfcHelper = NFCHelper()
     var helper: GroundControlHelper!
     let ref = Database.database().reference()
     
@@ -21,10 +22,12 @@ class GroundControlViewController: UIViewController {
         
         ref.child("BiuPlayer").child(UIDevice.current.identifierForVendor!.uuidString).observeSingleEvent(of: .value, with: { (snapShot) in
             if let value = snapShot.value {
-                // skip landing
+                // skip landing redirect to lobby
+                
+            } else {
+                // wrong data?
+                self.initNewUserView()
             }
-            
-            self.initNewUserView()
             
         }) { (error) in
             self.initNewUserView()

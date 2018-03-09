@@ -27,6 +27,7 @@
 		06E3FE3F2051CE0200F1FAD6 /* GroundControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E3FE3D2051CE0200F1FAD6 /* GroundControlViewController.swift */; };
 		06E3FE422051CF0B00F1FAD6 /* BiuNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E3FE412051CF0B00F1FAD6 /* BiuNavigator.swift */; };
 		06E3FE442051D1B500F1FAD6 /* GroundControlHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E3FE432051D1B500F1FAD6 /* GroundControlHelper.swift */; };
+		06E3FE4620531ADF00F1FAD6 /* NFCHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E3FE4520531ADF00F1FAD6 /* NFCHelper.swift */; };
 		47C0750AF81CC1FECC119C90 /* Pods_biubiubiu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841FA6FE85EDD39153E09B14 /* Pods_biubiubiu.framework */; };
 		588EC76907E5B74472AD2C93 /* Pods_biubiubiuTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C3421C6CA03DFF27D0C6795 /* Pods_biubiubiuTests.framework */; };
 		AF3EF5C291114F1B50211FCF /* Pods_biubiubiuUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F851FAC0658FA7D525F44698 /* Pods_biubiubiuUITests.framework */; };
@@ -76,6 +77,7 @@
 		06E3FE3D2051CE0200F1FAD6 /* GroundControlViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroundControlViewController.swift; sourceTree = "<group>"; };
 		06E3FE412051CF0B00F1FAD6 /* BiuNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiuNavigator.swift; sourceTree = "<group>"; };
 		06E3FE432051D1B500F1FAD6 /* GroundControlHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroundControlHelper.swift; sourceTree = "<group>"; };
+		06E3FE4520531ADF00F1FAD6 /* NFCHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCHelper.swift; sourceTree = "<group>"; };
 		0A4B9BAB328FA0D27A65D758 /* Pods-biubiubiu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-biubiubiu.release.xcconfig"; path = "Pods/Target Support Files/Pods-biubiubiu/Pods-biubiubiu.release.xcconfig"; sourceTree = "<group>"; };
 		58F2C55483E1886A8E7E45E1 /* Pods-biubiubiuUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-biubiubiuUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-biubiubiuUITests/Pods-biubiubiuUITests.release.xcconfig"; sourceTree = "<group>"; };
 		78E7ABD82F3C76660B107D57 /* Pods-biubiubiuUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-biubiubiuUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-biubiubiuUITests/Pods-biubiubiuUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 			children = (
 				06ACF8AD203F69AF00FACA7C /* LandingViewController.swift */,
 				06ACF8AE203F69AF00FACA7C /* LandingViewController.xib */,
+				06E3FE4520531ADF00F1FAD6 /* NFCHelper.swift */,
 			);
 			name = Landing;
 			path = "Base Models";
@@ -583,6 +586,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				06ACF86A203F611E00FACA7C /* SuperViewController.swift in Sources */,
+				06E3FE4620531ADF00F1FAD6 /* NFCHelper.swift in Sources */,
 				06ACF868203F611E00FACA7C /* AppDelegate.swift in Sources */,
 				06ACF8AB203F694700FACA7C /* LoadingViewController.swift in Sources */,
 				06E3FE442051D1B500F1FAD6 /* GroundControlHelper.swift in Sources */,
@@ -762,7 +766,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7NBTE6SY4Z;
 				INFOPLIST_FILE = biubiubiu/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tonglin.t91.biubiubiu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -779,7 +783,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7NBTE6SY4Z;
 				INFOPLIST_FILE = biubiubiu/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tonglin.t91.biubiubiu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
