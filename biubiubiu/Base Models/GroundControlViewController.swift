@@ -25,7 +25,7 @@ class GroundControlViewController: UIViewController {
     
     func fetchUserInfo() {
         ref.child("BiuPlayer").child(UIDevice.current.identifierForVendor!.uuidString).observeSingleEvent(of: .value, with: { (snapshot) in
-            if let value = snapshot.value, let user = BiuUser.parsingValue(value) {
+            if let value = snapshot.value, let user = BiuUser.parsingUser(value) {
                 dump(user)
                 
             } else {

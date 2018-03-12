@@ -31,20 +31,4 @@ class BiuUser: NSObject, Codable {
     }
 }
 
-extension Encodable {
-    var dictionary: [String: Any] {
-        guard let data = try? JSONEncoder().encode(self) else { return [:] }
-        return (try? JSONSerialization.jsonObject(with: data, options: .allowFragments)).flatMap { $0 as? [String: Any] } ?? [:]
-    }
-}
 
-extension Decodable {
-    static func parsingValue(_ value: Any) -> BiuUser? {
-        if let data = try? JSONSerialization.data(withJSONObject: value, options: .prettyPrinted),
-            let user = try? JSONDecoder().decode(BiuUser.self, from: data) {
-            return user
-        }
-        
-        return nil
-    }
-}
