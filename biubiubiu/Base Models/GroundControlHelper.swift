@@ -10,6 +10,7 @@ import Foundation
 
 class GroundControlHelper: NSObject, BiuNavigator {
     var container: GroundControlViewController?
+    var currentUser: BiuUser?
     
     init(_ vc: GroundControlViewController) {
         container = vc

@@ -7,13 +7,14 @@
 //
 
 import UIKit
+import Firebase
 import FirebaseDatabase
 
 class GroundControlViewController: UIViewController {
     
     let nfcHelper = NFCHelper()
     var helper: GroundControlHelper!
-    let ref = Database.database().reference()
+    var ref: DatabaseReference!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,22 +25,38 @@ class GroundControlViewController: UIViewController {
     }
     
     func fetchUserInfo() {
-        ref.child("BiuPlayer").child(UIDevice.current.identifierForVendor!.uuidString).observeSingleEvent(of: .value, with: { (snapshot) in
-            if let value = snapshot.value, let user = BiuUser.parsingUser(value) {
-                dump(user)
-                
+        Auth.auth().signInAnonymously { (_, error) in
+            if let description = error {
+                print(description.localizedDescription)
+                self.toLanding()
             } else {
-                self.initNewUserView()
+                self.ref = Database.database().reference()
+                self.ref.child("BiuPlayer").child(UIDevice.current.identifierForVendor!.uuidString).observeSingleEvent(of: .value, with: { (snapshot) in
+                    if let value = snapshot.value, let user = BiuUser.parsingUser(value) {
+                        self.helper.currentUser = user
+                        dump(user)
+                        // To Lobby
+                        self.toLobby()
+                    } else {
+                        self.toLanding()
+                    }
+                    
+                }) { (error) in
+                    self.toLanding()
+                    print(error.localizedDescription)
+                }
             }
-            
-        }) { (error) in
-            self.initNewUserView()
-            print(error.localizedDescription)
         }
     }
-    func initNewUserView() {
+    
+    func toLanding() {
         let landing = LandingViewController(nibName: "LandingViewController", bundle: nil)
         helper.push(landing)
+    }
+    
+    func toLobby() {
+        let lobby = LobbyViewController(nibName: "LobbyViewController", bundle: nil)
+        helper.push(lobby)
     }
     
     func createSampleUser() {
