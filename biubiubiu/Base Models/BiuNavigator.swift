@@ -20,8 +20,7 @@ protocol BiuNavigator {
 extension BiuNavigator {
     func push<V:SuperViewController>(_ vc:V) {
         container?.addChildViewController(vc)
-        container?.view.addSubview(vc.view)
-        container?.view.sendSubview(toBack: vc.view)
+        container?.view.insertSubview(vc.view, belowSubview: container!.biuTabBar)
         vc.view.frame = container!.view.bounds
         vc.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         vc.didMove(toParentViewController: container)

@@ -15,38 +15,40 @@ class GroundControlViewController: UIViewController {
     let nfcHelper = NFCHelper()
     var helper: GroundControlHelper!
     var ref: DatabaseReference!
+    @IBOutlet weak var biuTabBar: UIStackView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.helper = GroundControlHelper(self)
-//        createSampleUser()
-        fetchUserInfo()
+        self.toLanding()
+        self.fetchUserInfo()
     }
     
     func fetchUserInfo() {
         Auth.auth().signInAnonymously { (_, error) in
             if let description = error {
                 print(description.localizedDescription)
-                self.toLanding()
+                self.blockingUnknowUser()
             } else {
                 self.ref = Database.database().reference()
                 self.ref.child("BiuPlayer").child(UIDevice.current.identifierForVendor!.uuidString).observeSingleEvent(of: .value, with: { (snapshot) in
                     if let value = snapshot.value, let user = BiuUser.parsingUser(value) {
                         self.helper.currentUser = user
-                        dump(user)
-                        // To Lobby
                         self.toLobby()
-                    } else {
-                        self.toLanding()
+                        return
                     }
-                    
+                    self.blockingUnknowUser()
                 }) { (error) in
-                    self.toLanding()
                     print(error.localizedDescription)
+                    self.blockingUnknowUser()
                 }
             }
         }
+    }
+    
+    func blockingUnknowUser() {
+        
     }
     
     func toLanding() {
