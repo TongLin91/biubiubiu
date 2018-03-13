@@ -10,6 +10,8 @@
 		065394D720587A5100887489 /* Loading.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 065394D620587A5100887489 /* Loading.storyboard */; };
 		065394DA20587B9B00887489 /* Master.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 065394D920587B9B00887489 /* Master.storyboard */; };
 		065394DC20587BF200887489 /* SuperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065394DB20587BF200887489 /* SuperViewController.swift */; };
+		065394E020587D8100887489 /* LobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065394DF20587D8100887489 /* LobbyViewController.swift */; };
+		065394E420587E0300887489 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065394E320587E0300887489 /* ProfileViewController.swift */; };
 		06ACF868203F611E00FACA7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06ACF867203F611E00FACA7C /* AppDelegate.swift */; };
 		06ACF86D203F611E00FACA7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06ACF86B203F611E00FACA7C /* Main.storyboard */; };
 		06ACF870203F611E00FACA7C /* biubiubiu.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 06ACF86E203F611E00FACA7C /* biubiubiu.xcdatamodeld */; };
@@ -50,6 +52,8 @@
 		065394D620587A5100887489 /* Loading.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Loading.storyboard; sourceTree = "<group>"; };
 		065394D920587B9B00887489 /* Master.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Master.storyboard; sourceTree = "<group>"; };
 		065394DB20587BF200887489 /* SuperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SuperViewController.swift; path = "Base Models/SuperViewController.swift"; sourceTree = "<group>"; };
+		065394DF20587D8100887489 /* LobbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyViewController.swift; sourceTree = "<group>"; };
+		065394E320587E0300887489 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		06ACF864203F611E00FACA7C /* biubiubiu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = biubiubiu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06ACF867203F611E00FACA7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06ACF86C203F611E00FACA7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -122,6 +126,7 @@
 		065394DD20587C2500887489 /* Lobby */ = {
 			isa = PBXGroup;
 			children = (
+				065394DF20587D8100887489 /* LobbyViewController.swift */,
 			);
 			path = Lobby;
 			sourceTree = "<group>";
@@ -129,6 +134,7 @@
 		065394DE20587C3100887489 /* Account */ = {
 			isa = PBXGroup;
 			children = (
+				065394E320587E0300887489 /* ProfileViewController.swift */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -577,6 +583,8 @@
 				06ACF8AB203F694700FACA7C /* LoadingViewController.swift in Sources */,
 				06ACF8A7203F68F300FACA7C /* OnboardingViewController.swift in Sources */,
 				06ACF8B5203F76CF00FACA7C /* Notification+Name.swift in Sources */,
+				065394E420587E0300887489 /* ProfileViewController.swift in Sources */,
+				065394E020587D8100887489 /* LobbyViewController.swift in Sources */,
 				06ACF870203F611E00FACA7C /* biubiubiu.xcdatamodeld in Sources */,
 				06E3FE3C2051B00700F1FAD6 /* BiuUser.swift in Sources */,
 			);

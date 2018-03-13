@@ -9,15 +9,9 @@
 import UIKit
 
 class OnboardingViewController: SuperViewController {
-    //First time user onboarding tutorial
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        // blocking unregistered user
+        
     }
 }

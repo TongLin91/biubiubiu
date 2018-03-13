@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="HIm-uF-6rH">
             <objects>
-                <viewController id="YGy-yJ-DXR" sceneMemberID="viewController">
+                <viewController id="YGy-yJ-DXR" customClass="ProfileViewController" customModule="biubiubiu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0bD-yr-pnn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -25,10 +25,10 @@
             </objects>
             <point key="canvasLocation" x="844" y="678"/>
         </scene>
-        <!--View Controller-->
+        <!--Lobby View Controller-->
         <scene sceneID="ZUg-as-3P2">
             <objects>
-                <viewController id="cEY-ge-Eja" sceneMemberID="viewController">
+                <viewController id="cEY-ge-Eja" customClass="LobbyViewController" customModule="biubiubiu" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VFH-JR-Ujv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
