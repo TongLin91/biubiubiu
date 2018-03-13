@@ -18,13 +18,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
-        self.appInitLoading()
+        
+        Auth.auth().signInAnonymously { (_, error) in
+            if let description = error {
+                print(description.localizedDescription)
+                //TODO block loading
+                return
+            }
+            UserCacheManager.shared.fetchUserData()
+        }
+        
+        self.appFireUp()
         
         return true
     }
     
-    func appInitLoading() {
-        
+    func appFireUp() {
         let loading = UIStoryboard(name: "Loading", bundle: nil).instantiateViewController(withIdentifier: "LoadingViewControllerID") as! LoadingViewController
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.rootViewController = loading
