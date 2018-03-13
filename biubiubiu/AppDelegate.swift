@@ -24,14 +24,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func appInitLoading() {
-        let loading = LoadingViewController()
+        
+        let loading = UIStoryboard(name: "Loading", bundle: nil).instantiateViewController(withIdentifier: "LoadingViewControllerID") as! LoadingViewController
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.rootViewController = loading
         self.window?.makeKeyAndVisible()
     }
     
     func presentLanding() {
-        let mainController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "GroundControlViewControllerIdentifier") as! GroundControlViewController
+        
+        let mainController = UIStoryboard(name: "Master", bundle: nil).instantiateInitialViewController()
         self.window?.rootViewController = mainController
     }
 
