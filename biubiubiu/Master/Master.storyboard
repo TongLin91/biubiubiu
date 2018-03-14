@@ -32,10 +32,24 @@
                     <view key="view" contentMode="scaleToFill" id="VFH-JR-Ujv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="01o-dB-XUH">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Saa-zP-TB6" firstAttribute="trailing" secondItem="01o-dB-XUH" secondAttribute="trailing" id="0Mx-fk-KUf"/>
+                            <constraint firstItem="01o-dB-XUH" firstAttribute="top" secondItem="Saa-zP-TB6" secondAttribute="top" id="BRi-rt-3p3"/>
+                            <constraint firstItem="01o-dB-XUH" firstAttribute="leading" secondItem="Saa-zP-TB6" secondAttribute="leading" id="Xqu-D5-qSb"/>
+                            <constraint firstItem="Saa-zP-TB6" firstAttribute="bottom" secondItem="01o-dB-XUH" secondAttribute="bottom" id="yVf-Lf-aP4"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Saa-zP-TB6"/>
                     </view>
-                    <navigationItem key="navigationItem" id="1Ce-W7-VZR"/>
+                    <navigationItem key="navigationItem" id="1Ce-W7-VZR">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="oYc-M0-wAd"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BhN-bb-i31" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

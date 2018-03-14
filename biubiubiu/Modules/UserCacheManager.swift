@@ -11,17 +11,28 @@ import UIKit
 import FirebaseDatabase
 
 class UserCacheManager {
-    private let key = "bbbUserInfoExtractionKey"
+    private let dbRef = Database.database().reference()
+    private let userRootRef = "BiuPlayer"
+    private let userInfoKey = "bbbUserInfoExtractionKey"
     static let shared = UserCacheManager()
     init() {}
     
     func loadUserData() -> Any? {
-        return UserDefaults.standard.object(forKey: key)
+        return UserDefaults.standard.object(forKey: userInfoKey)
+    }
+    
+    func createNewUser(_ invitedBy: String) {
+        let newUser = BiuUser(name: "my name", invitedBy: invitedBy)
+        dbRef.child(userRootRef).child(UIDevice.current.identifierForVendor!.uuidString).setValue(newUser.dictionary) { (error, _) in
+            print(error?.localizedDescription ?? "Welcome, new user")
+            if error != nil {
+                self.saveUserData(newUser.dictionary)
+            }
+        }
     }
     
     func fetchUserData(_ completion: @escaping (Bool)->()) {
-        let ref = Database.database().reference()
-        ref.child("BiuPlayer").child(UIDevice.current.identifierForVendor!.uuidString).observeSingleEvent(of: .value, with: { (snapshot) in
+        dbRef.child(userRootRef).child(UIDevice.current.identifierForVendor!.uuidString).observeSingleEvent(of: .value, with: { (snapshot) in
             if snapshot.exists() {
                 self.saveUserData(snapshot.value)
                 completion(true)
@@ -35,6 +46,6 @@ class UserCacheManager {
     }
     
     private func saveUserData(_ data: Any?) {
-        UserDefaults.standard.set(data, forKey: key)
+        UserDefaults.standard.set(data, forKey: userInfoKey)
     }
 }

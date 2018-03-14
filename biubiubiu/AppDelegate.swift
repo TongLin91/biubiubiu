@@ -34,10 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func signInAnonymously() {
         Auth.auth().signInAnonymously { (_, error) in
-            if let description = error {
-                print(description.localizedDescription)
-                PermissionManager.shared.blockAccess()
-            }
+            print(error?.localizedDescription ?? "login success")
         }
     }
     
