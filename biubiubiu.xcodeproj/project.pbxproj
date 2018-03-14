@@ -13,6 +13,7 @@
 		065394E020587D8100887489 /* LobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065394DF20587D8100887489 /* LobbyViewController.swift */; };
 		065394E420587E0300887489 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065394E320587E0300887489 /* ProfileViewController.swift */; };
 		065394E8205882AD00887489 /* UserCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065394E7205882AD00887489 /* UserCacheManager.swift */; };
+		065394EA2058879E00887489 /* PermissionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065394E92058879E00887489 /* PermissionManager.swift */; };
 		06ACF868203F611E00FACA7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06ACF867203F611E00FACA7C /* AppDelegate.swift */; };
 		06ACF86D203F611E00FACA7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06ACF86B203F611E00FACA7C /* Main.storyboard */; };
 		06ACF870203F611E00FACA7C /* biubiubiu.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 06ACF86E203F611E00FACA7C /* biubiubiu.xcdatamodeld */; };
@@ -21,8 +22,6 @@
 		06ACF880203F611E00FACA7C /* biubiubiuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06ACF87F203F611E00FACA7C /* biubiubiuTests.swift */; };
 		06ACF88B203F611E00FACA7C /* biubiubiuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06ACF88A203F611E00FACA7C /* biubiubiuUITests.swift */; };
 		06ACF899203F630B00FACA7C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 06ACF898203F630B00FACA7C /* GoogleService-Info.plist */; };
-		06ACF8A7203F68F300FACA7C /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06ACF8A5203F68F200FACA7C /* OnboardingViewController.swift */; };
-		06ACF8A8203F68F300FACA7C /* OnboardingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06ACF8A6203F68F300FACA7C /* OnboardingViewController.xib */; };
 		06ACF8AB203F694700FACA7C /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06ACF8A9203F694700FACA7C /* LoadingViewController.swift */; };
 		06ACF8B5203F76CF00FACA7C /* Notification+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06ACF8B4203F76CF00FACA7C /* Notification+Name.swift */; };
 		06E3FE3C2051B00700F1FAD6 /* BiuUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E3FE3B2051B00700F1FAD6 /* BiuUser.swift */; };
@@ -56,6 +55,7 @@
 		065394DF20587D8100887489 /* LobbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyViewController.swift; sourceTree = "<group>"; };
 		065394E320587E0300887489 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		065394E7205882AD00887489 /* UserCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCacheManager.swift; sourceTree = "<group>"; };
+		065394E92058879E00887489 /* PermissionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionManager.swift; sourceTree = "<group>"; };
 		06ACF864203F611E00FACA7C /* biubiubiu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = biubiubiu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06ACF867203F611E00FACA7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06ACF86C203F611E00FACA7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -70,8 +70,6 @@
 		06ACF88A203F611E00FACA7C /* biubiubiuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = biubiubiuUITests.swift; sourceTree = "<group>"; };
 		06ACF88C203F611E00FACA7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06ACF898203F630B00FACA7C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		06ACF8A5203F68F200FACA7C /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OnboardingViewController.swift; path = Onboarding/OnboardingViewController.swift; sourceTree = "<group>"; };
-		06ACF8A6203F68F300FACA7C /* OnboardingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = OnboardingViewController.xib; path = Onboarding/OnboardingViewController.xib; sourceTree = "<group>"; };
 		06ACF8A9203F694700FACA7C /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoadingViewController.swift; path = Loading/LoadingViewController.swift; sourceTree = "<group>"; };
 		06ACF8B4203F76CF00FACA7C /* Notification+Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Notification+Name.swift"; path = "biubiubiu/Extension/Notification+Name.swift"; sourceTree = SOURCE_ROOT; };
 		06E3FE3B2051B00700F1FAD6 /* BiuUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiuUser.swift; sourceTree = "<group>"; };
@@ -229,8 +227,7 @@
 		06ACF8A0203F686900FACA7C /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				06ACF8A5203F68F200FACA7C /* OnboardingViewController.swift */,
-				06ACF8A6203F68F300FACA7C /* OnboardingViewController.xib */,
+				065394E92058879E00887489 /* PermissionManager.swift */,
 			);
 			name = Onboarding;
 			sourceTree = "<group>";
@@ -399,7 +396,6 @@
 				06ACF872203F611E00FACA7C /* Assets.xcassets in Resources */,
 				06ACF86D203F611E00FACA7C /* Main.storyboard in Resources */,
 				06ACF899203F630B00FACA7C /* GoogleService-Info.plist in Resources */,
-				06ACF8A8203F68F300FACA7C /* OnboardingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,10 +578,10 @@
 			files = (
 				06E3FE4C20534F2800F1FAD6 /* Codable+Helper.swift in Sources */,
 				065394DC20587BF200887489 /* SuperViewController.swift in Sources */,
+				065394EA2058879E00887489 /* PermissionManager.swift in Sources */,
 				065394E8205882AD00887489 /* UserCacheManager.swift in Sources */,
 				06ACF868203F611E00FACA7C /* AppDelegate.swift in Sources */,
 				06ACF8AB203F694700FACA7C /* LoadingViewController.swift in Sources */,
-				06ACF8A7203F68F300FACA7C /* OnboardingViewController.swift in Sources */,
 				06ACF8B5203F76CF00FACA7C /* Notification+Name.swift in Sources */,
 				065394E420587E0300887489 /* ProfileViewController.swift in Sources */,
 				065394E020587D8100887489 /* LobbyViewController.swift in Sources */,

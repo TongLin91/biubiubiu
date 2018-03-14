@@ -15,10 +15,6 @@ class UserCacheManager {
     static let shared = UserCacheManager()
     init() {}
     
-    private func saveUserData(_ data: Any?) {
-        UserDefaults.standard.set(data, forKey: key)
-    }
-    
     func loadUserData() -> Any? {
         return UserDefaults.standard.object(forKey: key)
     }
@@ -29,7 +25,11 @@ class UserCacheManager {
             self.saveUserData(snapshot.value)
         }) { (error) in
             print(error.localizedDescription)
-            //TODO block user
+            PermissionManager.shared.blockAccess()
         }
+    }
+    
+    private func saveUserData(_ data: Any?) {
+        UserDefaults.standard.set(data, forKey: key)
     }
 }

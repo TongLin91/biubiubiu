@@ -16,17 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
         FirebaseApp.configure()
         
-        Auth.auth().signInAnonymously { (_, error) in
-            if let description = error {
-                print(description.localizedDescription)
-                //TODO block loading
-                return
-            }
-            UserCacheManager.shared.fetchUserData()
-        }
+        self.fetchUserInfo()
         
         self.appFireUp()
         
@@ -40,8 +32,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.makeKeyAndVisible()
     }
     
-    func presentLanding() {
-        
+    func fetchUserInfo() {
+        Auth.auth().signInAnonymously { (_, error) in
+            if let description = error {
+                print(description.localizedDescription)
+                PermissionManager.shared.blockAccess()
+                return
+            }
+            UserCacheManager.shared.fetchUserData()
+        }
+    }
+    
+    func presentMainController() {
         let mainController = UIStoryboard(name: "Master", bundle: nil).instantiateInitialViewController()
         self.window?.rootViewController = mainController
     }
