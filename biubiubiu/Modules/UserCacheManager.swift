@@ -19,13 +19,18 @@ class UserCacheManager {
         return UserDefaults.standard.object(forKey: key)
     }
     
-    func fetchUserData() {
+    func fetchUserData(_ completion: @escaping (Bool)->()) {
         let ref = Database.database().reference()
         ref.child("BiuPlayer").child(UIDevice.current.identifierForVendor!.uuidString).observeSingleEvent(of: .value, with: { (snapshot) in
-            self.saveUserData(snapshot.value)
+            if snapshot.exists() {
+                self.saveUserData(snapshot.value)
+                completion(true)
+            } else {
+                completion(false)
+            }
         }) { (error) in
             print(error.localizedDescription)
-            PermissionManager.shared.blockAccess()
+            completion(false)
         }
     }
     

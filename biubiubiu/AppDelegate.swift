@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
         
-        self.fetchUserInfo()
+        self.signInAnonymously()
         
         self.appFireUp()
         
@@ -32,20 +32,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.makeKeyAndVisible()
     }
     
-    func fetchUserInfo() {
+    func signInAnonymously() {
         Auth.auth().signInAnonymously { (_, error) in
             if let description = error {
                 print(description.localizedDescription)
                 PermissionManager.shared.blockAccess()
-                return
             }
-            UserCacheManager.shared.fetchUserData()
         }
     }
     
     func presentMainController() {
-        let mainController = UIStoryboard(name: "Master", bundle: nil).instantiateInitialViewController()
-        self.window?.rootViewController = mainController
+        UserCacheManager.shared.fetchUserData { exist in
+            let mainController = UIStoryboard(name: "Master", bundle: nil).instantiateInitialViewController()
+            guard exist else {
+                PermissionManager.shared.blockAccess()
+                return
+            }
+            self.window?.rootViewController = mainController
+        }
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
