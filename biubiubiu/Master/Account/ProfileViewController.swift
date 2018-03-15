@@ -12,7 +12,7 @@ class ProfileViewController: SuperViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         self.view.backgroundColor = .green
         self.navigationItem.title = "Profile"
     }

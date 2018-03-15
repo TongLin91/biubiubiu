@@ -14,6 +14,10 @@
 		065394E420587E0300887489 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065394E320587E0300887489 /* ProfileViewController.swift */; };
 		065394E8205882AD00887489 /* UserCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065394E7205882AD00887489 /* UserCacheManager.swift */; };
 		065394EA2058879E00887489 /* PermissionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065394E92058879E00887489 /* PermissionManager.swift */; };
+		065394ED2059D81A00887489 /* RoomListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065394EB2059D81A00887489 /* RoomListTableViewCell.swift */; };
+		065394EE2059D81A00887489 /* RoomListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 065394EC2059D81A00887489 /* RoomListTableViewCell.xib */; };
+		065394F0205AE97500887489 /* BiuRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065394EF205AE97500887489 /* BiuRoom.swift */; };
+		065394F2205AEAAE00887489 /* BiuMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065394F1205AEAAE00887489 /* BiuMessage.swift */; };
 		06ACF868203F611E00FACA7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06ACF867203F611E00FACA7C /* AppDelegate.swift */; };
 		06ACF86D203F611E00FACA7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06ACF86B203F611E00FACA7C /* Main.storyboard */; };
 		06ACF870203F611E00FACA7C /* biubiubiu.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 06ACF86E203F611E00FACA7C /* biubiubiu.xcdatamodeld */; };
@@ -56,6 +60,10 @@
 		065394E320587E0300887489 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		065394E7205882AD00887489 /* UserCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCacheManager.swift; sourceTree = "<group>"; };
 		065394E92058879E00887489 /* PermissionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionManager.swift; sourceTree = "<group>"; };
+		065394EB2059D81A00887489 /* RoomListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomListTableViewCell.swift; sourceTree = "<group>"; };
+		065394EC2059D81A00887489 /* RoomListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoomListTableViewCell.xib; sourceTree = "<group>"; };
+		065394EF205AE97500887489 /* BiuRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiuRoom.swift; sourceTree = "<group>"; };
+		065394F1205AEAAE00887489 /* BiuMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiuMessage.swift; sourceTree = "<group>"; };
 		06ACF864203F611E00FACA7C /* biubiubiu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = biubiubiu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06ACF867203F611E00FACA7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06ACF86C203F611E00FACA7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -127,6 +135,8 @@
 			isa = PBXGroup;
 			children = (
 				065394DF20587D8100887489 /* LobbyViewController.swift */,
+				065394EB2059D81A00887489 /* RoomListTableViewCell.swift */,
+				065394EC2059D81A00887489 /* RoomListTableViewCell.xib */,
 			);
 			path = Lobby;
 			sourceTree = "<group>";
@@ -246,6 +256,8 @@
 			children = (
 				065394E7205882AD00887489 /* UserCacheManager.swift */,
 				06E3FE3B2051B00700F1FAD6 /* BiuUser.swift */,
+				065394EF205AE97500887489 /* BiuRoom.swift */,
+				065394F1205AEAAE00887489 /* BiuMessage.swift */,
 				06E3FE4B20534F2800F1FAD6 /* Codable+Helper.swift */,
 			);
 			path = Modules;
@@ -393,6 +405,7 @@
 				065394DA20587B9B00887489 /* Master.storyboard in Resources */,
 				065394D720587A5100887489 /* Loading.storyboard in Resources */,
 				06ACF875203F611E00FACA7C /* LaunchScreen.storyboard in Resources */,
+				065394EE2059D81A00887489 /* RoomListTableViewCell.xib in Resources */,
 				06ACF872203F611E00FACA7C /* Assets.xcassets in Resources */,
 				06ACF86D203F611E00FACA7C /* Main.storyboard in Resources */,
 				06ACF899203F630B00FACA7C /* GoogleService-Info.plist in Resources */,
@@ -578,10 +591,13 @@
 			files = (
 				06E3FE4C20534F2800F1FAD6 /* Codable+Helper.swift in Sources */,
 				065394DC20587BF200887489 /* SuperViewController.swift in Sources */,
+				065394ED2059D81A00887489 /* RoomListTableViewCell.swift in Sources */,
 				065394EA2058879E00887489 /* PermissionManager.swift in Sources */,
 				065394E8205882AD00887489 /* UserCacheManager.swift in Sources */,
 				06ACF868203F611E00FACA7C /* AppDelegate.swift in Sources */,
+				065394F0205AE97500887489 /* BiuRoom.swift in Sources */,
 				06ACF8AB203F694700FACA7C /* LoadingViewController.swift in Sources */,
+				065394F2205AEAAE00887489 /* BiuMessage.swift in Sources */,
 				06ACF8B5203F76CF00FACA7C /* Notification+Name.swift in Sources */,
 				065394E420587E0300887489 /* ProfileViewController.swift in Sources */,
 				065394E020587D8100887489 /* LobbyViewController.swift in Sources */,

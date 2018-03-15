@@ -21,13 +21,13 @@ class UserCacheManager {
         return UserDefaults.standard.object(forKey: userInfoKey)
     }
     
-    func createNewUser(_ invitedBy: String) {
+    func createNewUser(_ invitedBy: String, completion: @escaping (Error?)->()) {
         let newUser = BiuUser(name: "my name", invitedBy: invitedBy)
         dbRef.child(userRootRef).child(UIDevice.current.identifierForVendor!.uuidString).setValue(newUser.dictionary) { (error, _) in
-            print(error?.localizedDescription ?? "Welcome, new user")
             if error != nil {
                 self.saveUserData(newUser.dictionary)
             }
+            completion(error)
         }
     }
     
