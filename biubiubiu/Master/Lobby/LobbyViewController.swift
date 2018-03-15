@@ -9,11 +9,18 @@
 import UIKit
 
 class LobbyViewController: SuperViewController {
-
+    
+    var helper: LobbyHelper!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        helper = LobbyHelper(for: self)
         
         self.view.backgroundColor = .yellow
         self.navigationItem.title = "Lobby"
     }
+    
+    
+    
 }
