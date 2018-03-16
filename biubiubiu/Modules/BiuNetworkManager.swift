@@ -10,7 +10,9 @@ import Foundation
 import UIKit
 import FirebaseDatabase
 
-open class BiuNetworkManager {
+class BiuNetworkManager {
+    static let shared = BiuNetworkManager()
+    
     private let dbRef = Database.database().reference()
     private let userRootRef = "BiuPlayer"
     private let roomRootRef = "BiuRooms"

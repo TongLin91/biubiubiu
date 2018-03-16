@@ -22,4 +22,17 @@ extension Decodable {
         
         return user
     }
+    
+    static func parsingRoom(_ value: Any) -> BiuRoom? {
+        guard let data = try? JSONSerialization.data(withJSONObject: value, options: .prettyPrinted),
+            let room = try? JSONDecoder().decode(BiuRoom.self, from: data) else { return nil }
+        
+        return room
+    }
+    
+    
+}
+
+class SuperModule: NSObject, Codable {
+
 }

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class BiuMessage: NSObject, Codable {
+class BiuMessage: SuperModule {
     var sender: String?
     var content: String?
     var timeStamp: Date?
@@ -21,5 +21,9 @@ class BiuMessage: NSObject, Codable {
     
     override init() {
         super.init()
+    }
+    
+    required init(from decoder: Decoder) throws {
+        fatalError("init(from:) has not been implemented")
     }
 }

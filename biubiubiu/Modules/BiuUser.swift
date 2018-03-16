@@ -8,7 +8,7 @@
 
 import Foundation
 
-class BiuUser: NSObject, Codable {
+class BiuUser: SuperModule {
     var displayName: String?
     var dateJoined: Date?
     var lastTimeStamp: Date?
@@ -31,6 +31,10 @@ class BiuUser: NSObject, Codable {
         self.lastTimeStamp = Date()
         self.invitedBy = invitedBy
         self.avatar = ""
+    }
+    
+    required init(from decoder: Decoder) throws {
+        fatalError("init(from:) has not been implemented")
     }
 }
 

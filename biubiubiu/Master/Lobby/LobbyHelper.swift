@@ -19,6 +19,10 @@ class LobbyHelper: NSObject {
         self.output = vc
         self.navigator = LobbyNavigator(vc: vc)
     }
+    
+    func loadRoomsList() {
+        module.fetchRoomList()
+    }
 }
 
 extension LobbyHelper: UITableViewDelegate, UITableViewDataSource {
@@ -39,6 +43,4 @@ extension LobbyHelper: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 46
     }
-    
-    
 }

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class BiuRoom: NSObject, Codable {
+class BiuRoom: SuperModule {
     var id: String?
     var name: String?
     var owner: String?
@@ -29,5 +29,9 @@ class BiuRoom: NSObject, Codable {
     
     override init() {
         super.init()
+    }
+    
+    required init(from decoder: Decoder) throws {
+        fatalError("init(from:) has not been implemented")
     }
 }

@@ -14,6 +14,17 @@ class LobbyModule: NSObject {
     override init() {}
     
     func fetchRoomList() {
-        
+        BiuNetworkManager.shared.fetchAllRooms { (response) in
+            if let error = response.error {
+                print(error.localizedDescription)
+            } else if let data = response.data as? [String: Any] {
+                self.rooms = []
+                for (_, value) in data {
+                    if let room = BiuRoom.parsingRoom(value) {
+                        self.rooms.append(room)
+                    }
+                }
+            }
+        }
     }
 }
