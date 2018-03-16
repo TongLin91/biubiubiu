@@ -11,6 +11,7 @@ import Foundation
 class BiuUser: NSObject, Codable {
     var displayName: String?
     var dateJoined: Date?
+    var lastTimeStamp: Date?
     var invitedBy: String?
     var avatar: String?
 //    var friendList: [String] = []
@@ -18,6 +19,7 @@ class BiuUser: NSObject, Codable {
     private enum CodingKeys: String, CodingKey {
         case displayName
         case dateJoined
+        case lastTimeStamp
         case invitedBy
         case avatar
     }
@@ -26,6 +28,7 @@ class BiuUser: NSObject, Codable {
         super.init()
         self.displayName = name
         self.dateJoined = Date()
+        self.lastTimeStamp = Date()
         self.invitedBy = invitedBy
         self.avatar = ""
     }

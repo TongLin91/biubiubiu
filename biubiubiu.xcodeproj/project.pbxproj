@@ -20,6 +20,8 @@
 		065394F2205AEAAE00887489 /* BiuMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065394F1205AEAAE00887489 /* BiuMessage.swift */; };
 		065394F5205AEFD100887489 /* LobbyHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065394F4205AEFD100887489 /* LobbyHelper.swift */; };
 		065394F7205AEFDE00887489 /* LobbyNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065394F6205AEFDE00887489 /* LobbyNavigator.swift */; };
+		065394F9205C57D500887489 /* LobbyModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065394F8205C57D500887489 /* LobbyModule.swift */; };
+		065394FB205C599900887489 /* BiuNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065394FA205C599900887489 /* BiuNetworkManager.swift */; };
 		06ACF868203F611E00FACA7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06ACF867203F611E00FACA7C /* AppDelegate.swift */; };
 		06ACF86D203F611E00FACA7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06ACF86B203F611E00FACA7C /* Main.storyboard */; };
 		06ACF870203F611E00FACA7C /* biubiubiu.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 06ACF86E203F611E00FACA7C /* biubiubiu.xcdatamodeld */; };
@@ -68,6 +70,8 @@
 		065394F1205AEAAE00887489 /* BiuMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiuMessage.swift; sourceTree = "<group>"; };
 		065394F4205AEFD100887489 /* LobbyHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyHelper.swift; sourceTree = "<group>"; };
 		065394F6205AEFDE00887489 /* LobbyNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyNavigator.swift; sourceTree = "<group>"; };
+		065394F8205C57D500887489 /* LobbyModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyModule.swift; sourceTree = "<group>"; };
+		065394FA205C599900887489 /* BiuNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiuNetworkManager.swift; sourceTree = "<group>"; };
 		06ACF864203F611E00FACA7C /* biubiubiu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = biubiubiu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06ACF867203F611E00FACA7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06ACF86C203F611E00FACA7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -140,6 +144,7 @@
 			children = (
 				065394DF20587D8100887489 /* LobbyViewController.swift */,
 				065394F4205AEFD100887489 /* LobbyHelper.swift */,
+				065394F8205C57D500887489 /* LobbyModule.swift */,
 				065394F6205AEFDE00887489 /* LobbyNavigator.swift */,
 				065394F3205AEE9000887489 /* Cells */,
 			);
@@ -268,6 +273,7 @@
 		06E3FE3A2051AFE400F1FAD6 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				065394FA205C599900887489 /* BiuNetworkManager.swift */,
 				065394E7205882AD00887489 /* UserCacheManager.swift */,
 				06E3FE3B2051B00700F1FAD6 /* BiuUser.swift */,
 				065394EF205AE97500887489 /* BiuRoom.swift */,
@@ -614,9 +620,11 @@
 				065394F0205AE97500887489 /* BiuRoom.swift in Sources */,
 				06ACF8AB203F694700FACA7C /* LoadingViewController.swift in Sources */,
 				065394F2205AEAAE00887489 /* BiuMessage.swift in Sources */,
+				065394FB205C599900887489 /* BiuNetworkManager.swift in Sources */,
 				06ACF8B5203F76CF00FACA7C /* Notification+Name.swift in Sources */,
 				065394E420587E0300887489 /* ProfileViewController.swift in Sources */,
 				065394E020587D8100887489 /* LobbyViewController.swift in Sources */,
+				065394F9205C57D500887489 /* LobbyModule.swift in Sources */,
 				06ACF870203F611E00FACA7C /* biubiubiu.xcdatamodeld in Sources */,
 				06E3FE3C2051B00700F1FAD6 /* BiuUser.swift in Sources */,
 			);

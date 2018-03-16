@@ -8,11 +8,10 @@
 
 import Foundation
 
-class LobbyNavigator: NSObject {
+class LobbyNavigator {
     var output: SuperViewController!
     
     init(vc: SuperViewController) {
-        super.init()
         self.output = vc
     }
 }
