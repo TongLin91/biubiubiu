@@ -10,17 +10,26 @@ import UIKit
 
 class LobbyViewController: SuperViewController {
     
+    @IBOutlet weak var roomsTableView: UITableView!
     var helper: LobbyHelper!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        helper = LobbyHelper(for: self)
+        self.helper = LobbyHelper(for: self)
         
+        self.appearanceSetup()
+        self.tableViewSetup()
+    }
+    
+    func appearanceSetup() {
         self.view.backgroundColor = .yellow
         self.navigationItem.title = "Lobby"
     }
     
-    
-    
+    func tableViewSetup() {
+        roomsTableView.register(UINib(nibName: "RoomListTableViewCell", bundle: nil), forCellReuseIdentifier: RoomListTableViewCell.cellIdentifier)
+        roomsTableView.delegate = helper
+        roomsTableView.dataSource = helper
+    }
 }

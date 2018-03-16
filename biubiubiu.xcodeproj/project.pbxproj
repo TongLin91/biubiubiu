@@ -129,8 +129,8 @@
 			isa = PBXGroup;
 			children = (
 				065394D920587B9B00887489 /* Master.storyboard */,
-				065394DE20587C3100887489 /* Account */,
 				065394DD20587C2500887489 /* Lobby */,
+				065394DE20587C3100887489 /* Account */,
 			);
 			path = Master;
 			sourceTree = "<group>";

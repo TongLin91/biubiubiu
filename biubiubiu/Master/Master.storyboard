@@ -60,6 +60,9 @@
                     <navigationItem key="navigationItem" id="1Ce-W7-VZR">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="oYc-M0-wAd"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="roomsTableView" destination="01o-dB-XUH" id="wjN-Om-2rE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BhN-bb-i31" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
