@@ -7,11 +7,17 @@
 //
 
 import Foundation
+import UIKit
 
 class LobbyNavigator {
     var output: SuperViewController!
     
     init(vc: SuperViewController) {
         self.output = vc
+    }
+    
+    func pushNewRoomCreationVC() {
+        let createNewRoomVC = UITableViewController(nibName: "NewRoomTableViewController", bundle: nil)
+        output.navigationController?.pushViewController(createNewRoomVC, animated: true)
     }
 }

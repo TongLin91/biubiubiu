@@ -63,7 +63,11 @@
                         <viewLayoutGuide key="safeArea" id="Saa-zP-TB6"/>
                     </view>
                     <navigationItem key="navigationItem" id="1Ce-W7-VZR">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="oYc-M0-wAd"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="oYc-M0-wAd">
+                            <connections>
+                                <action selector="createNewRoomTapped:" destination="cEY-ge-Eja" id="Zuz-XR-wrZ"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="roomsTableView" destination="01o-dB-XUH" id="wjN-Om-2rE"/>

@@ -23,6 +23,10 @@ class LobbyHelper: NSObject {
     func loadRoomsList() {
         module.fetchRoomList()
     }
+    
+    func gotoNewRoomCreation() {
+        navigator.pushNewRoomCreationVC()
+    }
 }
 
 extension LobbyHelper: UITableViewDelegate, UITableViewDataSource {

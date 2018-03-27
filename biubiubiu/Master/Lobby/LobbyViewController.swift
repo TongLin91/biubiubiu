@@ -22,12 +22,16 @@ class LobbyViewController: SuperViewController {
         self.tableViewSetup()
     }
     
-    func appearanceSetup() {
+    @IBAction func createNewRoomTapped(_ sender: UIBarButtonItem) {
+        helper.gotoNewRoomCreation()
+    }
+    
+    private func appearanceSetup() {
         self.view.backgroundColor = .yellow
         self.navigationItem.title = "Lobby"
     }
-    
-    func tableViewSetup() {
+
+    private func tableViewSetup() {
         roomsTableView.register(UINib(nibName: "RoomListTableViewCell", bundle: nil), forCellReuseIdentifier: RoomListTableViewCell.cellIdentifier)
         roomsTableView.delegate = helper
         roomsTableView.dataSource = helper
