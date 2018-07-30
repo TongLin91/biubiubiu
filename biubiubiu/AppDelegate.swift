@@ -24,9 +24,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func appFireUp() {
-        let loading = UIStoryboard(name: "Loading", bundle: nil).instantiateViewController(withIdentifier: "LoadingViewControllerID") as! LoadingViewController
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        self.window?.rootViewController = loading
+        self.window?.rootViewController = ChatWireframe().viewController
         self.window?.makeKeyAndVisible()
     }
     
@@ -36,16 +35,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
-    func presentMainController() {
-        UserCacheManager.shared.fetchUserData { exist in
-            let mainController = UIStoryboard(name: "Master", bundle: nil).instantiateInitialViewController()
-            guard exist else {
-                PermissionManager.shared.blockAccess()
-                return
-            }
-            self.window?.rootViewController = mainController
-        }
-    }
+//    func presentMainController() {
+//        UserCacheManager.shared.createNewUser("master") { (error) in
+//
+//        }
+//        UserCacheManager.shared.fetchUserData { exist in
+//            let mainController = UIStoryboard(name: "Master", bundle: nil).instantiateInitialViewController()
+//            guard exist else {
+//                PermissionManager.shared.blockAccess()
+//                return
+//            }
+//            self.window?.rootViewController = mainController
+//        }
+//    }
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

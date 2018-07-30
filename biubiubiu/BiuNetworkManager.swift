@@ -31,11 +31,12 @@ class BiuNetworkManager {
     
     func registerNewUser(_ newUser: BiuUser, completion: @escaping (BiuResponse)->()) {
         dbRef.child(userRootRef).child(UIDevice.current.identifierForVendor!.uuidString).setValue(newUser.dictionary) { (error, _) in
-            if error != nil {
-                completion(BiuResponse(error: nil, data: newUser))
-            } else {
-                completion(BiuResponse(error: BiuError.other(with: error!.localizedDescription), data: nil))
+            
+            if let error = error {
+                completion(BiuResponse(error: BiuError.other(with: error.localizedDescription), data: nil))
+                return
             }
+            completion(BiuResponse(error: nil, data: newUser))
         }
     }
     

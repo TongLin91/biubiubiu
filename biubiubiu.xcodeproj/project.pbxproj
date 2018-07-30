@@ -7,21 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		065394D720587A5100887489 /* Loading.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 065394D620587A5100887489 /* Loading.storyboard */; };
-		065394DA20587B9B00887489 /* Master.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 065394D920587B9B00887489 /* Master.storyboard */; };
-		065394DC20587BF200887489 /* SuperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065394DB20587BF200887489 /* SuperViewController.swift */; };
-		065394E020587D8100887489 /* LobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065394DF20587D8100887489 /* LobbyViewController.swift */; };
-		065394E420587E0300887489 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065394E320587E0300887489 /* ProfileViewController.swift */; };
+		065394DC20587BF200887489 /* baseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065394DB20587BF200887489 /* baseViewController.swift */; };
 		065394E8205882AD00887489 /* UserCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065394E7205882AD00887489 /* UserCacheManager.swift */; };
-		065394EA2058879E00887489 /* PermissionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065394E92058879E00887489 /* PermissionManager.swift */; };
-		065394ED2059D81A00887489 /* RoomListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065394EB2059D81A00887489 /* RoomListTableViewCell.swift */; };
-		065394EE2059D81A00887489 /* RoomListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 065394EC2059D81A00887489 /* RoomListTableViewCell.xib */; };
 		065394F0205AE97500887489 /* BiuRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065394EF205AE97500887489 /* BiuRoom.swift */; };
 		065394F2205AEAAE00887489 /* BiuMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065394F1205AEAAE00887489 /* BiuMessage.swift */; };
-		065394F5205AEFD100887489 /* LobbyHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065394F4205AEFD100887489 /* LobbyHelper.swift */; };
-		065394F7205AEFDE00887489 /* LobbyNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065394F6205AEFDE00887489 /* LobbyNavigator.swift */; };
-		065394F9205C57D500887489 /* LobbyModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065394F8205C57D500887489 /* LobbyModule.swift */; };
 		065394FB205C599900887489 /* BiuNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065394FA205C599900887489 /* BiuNetworkManager.swift */; };
+		065DCCDE210FA76C003FC6AF /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065DCCDD210FA76C003FC6AF /* ChatViewController.swift */; };
+		065DCCE0210FA794003FC6AF /* ChatStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 065DCCDF210FA794003FC6AF /* ChatStoryboard.storyboard */; };
+		065DCCE2210FA828003FC6AF /* ChatWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065DCCE1210FA828003FC6AF /* ChatWireframe.swift */; };
+		065DCCEE210FA908003FC6AF /* ChatEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065DCCED210FA908003FC6AF /* ChatEventHandler.swift */; };
+		065DCCF0210FA9A9003FC6AF /* ChatInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065DCCEF210FA9A9003FC6AF /* ChatInteractor.swift */; };
+		065DCCF2210FB0FD003FC6AF /* BaseWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065DCCF1210FB0FD003FC6AF /* BaseWireframe.swift */; };
 		06ACF868203F611E00FACA7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06ACF867203F611E00FACA7C /* AppDelegate.swift */; };
 		06ACF86D203F611E00FACA7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06ACF86B203F611E00FACA7C /* Main.storyboard */; };
 		06ACF870203F611E00FACA7C /* biubiubiu.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 06ACF86E203F611E00FACA7C /* biubiubiu.xcdatamodeld */; };
@@ -30,10 +26,6 @@
 		06ACF880203F611E00FACA7C /* biubiubiuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06ACF87F203F611E00FACA7C /* biubiubiuTests.swift */; };
 		06ACF88B203F611E00FACA7C /* biubiubiuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06ACF88A203F611E00FACA7C /* biubiubiuUITests.swift */; };
 		06ACF899203F630B00FACA7C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 06ACF898203F630B00FACA7C /* GoogleService-Info.plist */; };
-		06ACF8AB203F694700FACA7C /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06ACF8A9203F694700FACA7C /* LoadingViewController.swift */; };
-		06ACF8B5203F76CF00FACA7C /* Notification+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06ACF8B4203F76CF00FACA7C /* Notification+Name.swift */; };
-		06BB2D0F20698DE40054117A /* NewRoomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06BB2D0D20698DE40054117A /* NewRoomTableViewController.swift */; };
-		06BB2D1020698DE40054117A /* NewRoomTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06BB2D0E20698DE40054117A /* NewRoomTableViewController.xib */; };
 		06E3FE3C2051B00700F1FAD6 /* BiuUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E3FE3B2051B00700F1FAD6 /* BiuUser.swift */; };
 		06E3FE4C20534F2800F1FAD6 /* Codable+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E3FE4B20534F2800F1FAD6 /* Codable+Helper.swift */; };
 		47C0750AF81CC1FECC119C90 /* Pods_biubiubiu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841FA6FE85EDD39153E09B14 /* Pods_biubiubiu.framework */; };
@@ -59,21 +51,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		065394D620587A5100887489 /* Loading.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Loading.storyboard; sourceTree = "<group>"; };
-		065394D920587B9B00887489 /* Master.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Master.storyboard; sourceTree = "<group>"; };
-		065394DB20587BF200887489 /* SuperViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SuperViewController.swift; path = "Base Models/SuperViewController.swift"; sourceTree = "<group>"; };
-		065394DF20587D8100887489 /* LobbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyViewController.swift; sourceTree = "<group>"; };
-		065394E320587E0300887489 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		065394DB20587BF200887489 /* baseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = baseViewController.swift; path = "Base Models/baseViewController.swift"; sourceTree = "<group>"; };
 		065394E7205882AD00887489 /* UserCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCacheManager.swift; sourceTree = "<group>"; };
-		065394E92058879E00887489 /* PermissionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionManager.swift; sourceTree = "<group>"; };
-		065394EB2059D81A00887489 /* RoomListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomListTableViewCell.swift; sourceTree = "<group>"; };
-		065394EC2059D81A00887489 /* RoomListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoomListTableViewCell.xib; sourceTree = "<group>"; };
 		065394EF205AE97500887489 /* BiuRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiuRoom.swift; sourceTree = "<group>"; };
 		065394F1205AEAAE00887489 /* BiuMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiuMessage.swift; sourceTree = "<group>"; };
-		065394F4205AEFD100887489 /* LobbyHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyHelper.swift; sourceTree = "<group>"; };
-		065394F6205AEFDE00887489 /* LobbyNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyNavigator.swift; sourceTree = "<group>"; };
-		065394F8205C57D500887489 /* LobbyModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LobbyModule.swift; sourceTree = "<group>"; };
 		065394FA205C599900887489 /* BiuNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiuNetworkManager.swift; sourceTree = "<group>"; };
+		065DCCDD210FA76C003FC6AF /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		065DCCDF210FA794003FC6AF /* ChatStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChatStoryboard.storyboard; sourceTree = "<group>"; };
+		065DCCE1210FA828003FC6AF /* ChatWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatWireframe.swift; sourceTree = "<group>"; };
+		065DCCED210FA908003FC6AF /* ChatEventHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatEventHandler.swift; sourceTree = "<group>"; };
+		065DCCEF210FA9A9003FC6AF /* ChatInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInteractor.swift; sourceTree = "<group>"; };
+		065DCCF1210FB0FD003FC6AF /* BaseWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseWireframe.swift; sourceTree = "<group>"; };
 		06ACF864203F611E00FACA7C /* biubiubiu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = biubiubiu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06ACF867203F611E00FACA7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06ACF86C203F611E00FACA7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -88,10 +76,6 @@
 		06ACF88A203F611E00FACA7C /* biubiubiuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = biubiubiuUITests.swift; sourceTree = "<group>"; };
 		06ACF88C203F611E00FACA7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		06ACF898203F630B00FACA7C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		06ACF8A9203F694700FACA7C /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoadingViewController.swift; path = Loading/LoadingViewController.swift; sourceTree = "<group>"; };
-		06ACF8B4203F76CF00FACA7C /* Notification+Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Notification+Name.swift"; path = "biubiubiu/Extension/Notification+Name.swift"; sourceTree = SOURCE_ROOT; };
-		06BB2D0D20698DE40054117A /* NewRoomTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRoomTableViewController.swift; sourceTree = "<group>"; };
-		06BB2D0E20698DE40054117A /* NewRoomTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewRoomTableViewController.xib; sourceTree = "<group>"; };
 		06E3FE3B2051B00700F1FAD6 /* BiuUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiuUser.swift; sourceTree = "<group>"; };
 		06E3FE4B20534F2800F1FAD6 /* Codable+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Codable+Helper.swift"; sourceTree = "<group>"; };
 		0A4B9BAB328FA0D27A65D758 /* Pods-biubiubiu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-biubiubiu.release.xcconfig"; path = "Pods/Target Support Files/Pods-biubiubiu/Pods-biubiubiu.release.xcconfig"; sourceTree = "<group>"; };
@@ -133,44 +117,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		065394D820587B7D00887489 /* Master */ = {
+		065DCCDB210FA70E003FC6AF /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				065394D920587B9B00887489 /* Master.storyboard */,
-				065394DD20587C2500887489 /* Lobby */,
-				065394DE20587C3100887489 /* Account */,
 			);
-			path = Master;
+			path = Login;
 			sourceTree = "<group>";
 		};
-		065394DD20587C2500887489 /* Lobby */ = {
+		065DCCDC210FA71E003FC6AF /* Chat */ = {
 			isa = PBXGroup;
 			children = (
-				065394DF20587D8100887489 /* LobbyViewController.swift */,
-				065394F4205AEFD100887489 /* LobbyHelper.swift */,
-				065394F8205C57D500887489 /* LobbyModule.swift */,
-				065394F6205AEFDE00887489 /* LobbyNavigator.swift */,
-				06BB2D0C20698DA70054117A /* New Room */,
-				065394F3205AEE9000887489 /* Cells */,
+				065DCCE1210FA828003FC6AF /* ChatWireframe.swift */,
+				065DCCED210FA908003FC6AF /* ChatEventHandler.swift */,
+				065DCCEF210FA9A9003FC6AF /* ChatInteractor.swift */,
+				065DCCDD210FA76C003FC6AF /* ChatViewController.swift */,
+				065DCCDF210FA794003FC6AF /* ChatStoryboard.storyboard */,
 			);
-			path = Lobby;
-			sourceTree = "<group>";
-		};
-		065394DE20587C3100887489 /* Account */ = {
-			isa = PBXGroup;
-			children = (
-				065394E320587E0300887489 /* ProfileViewController.swift */,
-			);
-			path = Account;
-			sourceTree = "<group>";
-		};
-		065394F3205AEE9000887489 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				065394EB2059D81A00887489 /* RoomListTableViewCell.swift */,
-				065394EC2059D81A00887489 /* RoomListTableViewCell.xib */,
-			);
-			path = Cells;
+			path = Chat;
 			sourceTree = "<group>";
 		};
 		06ACF85B203F611E00FACA7C = {
@@ -199,11 +162,13 @@
 			isa = PBXGroup;
 			children = (
 				06ACF867203F611E00FACA7C /* AppDelegate.swift */,
+				065394FA205C599900887489 /* BiuNetworkManager.swift */,
+				065394E7205882AD00887489 /* UserCacheManager.swift */,
+				06E3FE3B2051B00700F1FAD6 /* BiuUser.swift */,
+				065394EF205AE97500887489 /* BiuRoom.swift */,
+				065394F1205AEAAE00887489 /* BiuMessage.swift */,
+				06E3FE4B20534F2800F1FAD6 /* Codable+Helper.swift */,
 				06E3FE3A2051AFE400F1FAD6 /* Modules */,
-				06ACF8A0203F686900FACA7C /* Onboarding */,
-				06ACF89F203F685D00FACA7C /* Loading */,
-				065394D820587B7D00887489 /* Master */,
-				06ACF8B3203F769700FACA7C /* Extension */,
 				06ACF89B203F664600FACA7C /* Base Models */,
 				06ACF89A203F661400FACA7C /* Support Files */,
 			);
@@ -244,55 +209,17 @@
 		06ACF89B203F664600FACA7C /* Base Models */ = {
 			isa = PBXGroup;
 			children = (
-				065394DB20587BF200887489 /* SuperViewController.swift */,
+				065394DB20587BF200887489 /* baseViewController.swift */,
+				065DCCF1210FB0FD003FC6AF /* BaseWireframe.swift */,
 			);
 			path = "Base Models";
-			sourceTree = "<group>";
-		};
-		06ACF89F203F685D00FACA7C /* Loading */ = {
-			isa = PBXGroup;
-			children = (
-				06ACF8A9203F694700FACA7C /* LoadingViewController.swift */,
-				065394D620587A5100887489 /* Loading.storyboard */,
-			);
-			name = Loading;
-			sourceTree = "<group>";
-		};
-		06ACF8A0203F686900FACA7C /* Onboarding */ = {
-			isa = PBXGroup;
-			children = (
-				065394E92058879E00887489 /* PermissionManager.swift */,
-			);
-			name = Onboarding;
-			sourceTree = "<group>";
-		};
-		06ACF8B3203F769700FACA7C /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				06ACF8B4203F76CF00FACA7C /* Notification+Name.swift */,
-			);
-			name = Extension;
-			path = Account;
-			sourceTree = "<group>";
-		};
-		06BB2D0C20698DA70054117A /* New Room */ = {
-			isa = PBXGroup;
-			children = (
-				06BB2D0D20698DE40054117A /* NewRoomTableViewController.swift */,
-				06BB2D0E20698DE40054117A /* NewRoomTableViewController.xib */,
-			);
-			path = "New Room";
 			sourceTree = "<group>";
 		};
 		06E3FE3A2051AFE400F1FAD6 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				065394FA205C599900887489 /* BiuNetworkManager.swift */,
-				065394E7205882AD00887489 /* UserCacheManager.swift */,
-				06E3FE3B2051B00700F1FAD6 /* BiuUser.swift */,
-				065394EF205AE97500887489 /* BiuRoom.swift */,
-				065394F1205AEAAE00887489 /* BiuMessage.swift */,
-				06E3FE4B20534F2800F1FAD6 /* Codable+Helper.swift */,
+				065DCCDC210FA71E003FC6AF /* Chat */,
+				065DCCDB210FA70E003FC6AF /* Login */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -436,14 +363,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				065394DA20587B9B00887489 /* Master.storyboard in Resources */,
-				065394D720587A5100887489 /* Loading.storyboard in Resources */,
 				06ACF875203F611E00FACA7C /* LaunchScreen.storyboard in Resources */,
-				065394EE2059D81A00887489 /* RoomListTableViewCell.xib in Resources */,
 				06ACF872203F611E00FACA7C /* Assets.xcassets in Resources */,
-				06BB2D1020698DE40054117A /* NewRoomTableViewController.xib in Resources */,
 				06ACF86D203F611E00FACA7C /* Main.storyboard in Resources */,
 				06ACF899203F630B00FACA7C /* GoogleService-Info.plist in Resources */,
+				065DCCE0210FA794003FC6AF /* ChatStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -625,23 +549,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				06E3FE4C20534F2800F1FAD6 /* Codable+Helper.swift in Sources */,
-				06BB2D0F20698DE40054117A /* NewRoomTableViewController.swift in Sources */,
-				065394DC20587BF200887489 /* SuperViewController.swift in Sources */,
-				065394F7205AEFDE00887489 /* LobbyNavigator.swift in Sources */,
-				065394F5205AEFD100887489 /* LobbyHelper.swift in Sources */,
-				065394ED2059D81A00887489 /* RoomListTableViewCell.swift in Sources */,
-				065394EA2058879E00887489 /* PermissionManager.swift in Sources */,
+				065394DC20587BF200887489 /* baseViewController.swift in Sources */,
 				065394E8205882AD00887489 /* UserCacheManager.swift in Sources */,
 				06ACF868203F611E00FACA7C /* AppDelegate.swift in Sources */,
 				065394F0205AE97500887489 /* BiuRoom.swift in Sources */,
-				06ACF8AB203F694700FACA7C /* LoadingViewController.swift in Sources */,
 				065394F2205AEAAE00887489 /* BiuMessage.swift in Sources */,
+				065DCCF0210FA9A9003FC6AF /* ChatInteractor.swift in Sources */,
 				065394FB205C599900887489 /* BiuNetworkManager.swift in Sources */,
-				06ACF8B5203F76CF00FACA7C /* Notification+Name.swift in Sources */,
-				065394E420587E0300887489 /* ProfileViewController.swift in Sources */,
-				065394E020587D8100887489 /* LobbyViewController.swift in Sources */,
-				065394F9205C57D500887489 /* LobbyModule.swift in Sources */,
+				065DCCE2210FA828003FC6AF /* ChatWireframe.swift in Sources */,
 				06ACF870203F611E00FACA7C /* biubiubiu.xcdatamodeld in Sources */,
+				065DCCDE210FA76C003FC6AF /* ChatViewController.swift in Sources */,
+				065DCCF2210FB0FD003FC6AF /* BaseWireframe.swift in Sources */,
+				065DCCEE210FA908003FC6AF /* ChatEventHandler.swift in Sources */,
 				06E3FE3C2051B00700F1FAD6 /* BiuUser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

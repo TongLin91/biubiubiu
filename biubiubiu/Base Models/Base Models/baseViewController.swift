@@ -1,5 +1,5 @@
 //
-//  SuperViewController.swift
+//  baseViewController.swift
 //  biubiubiu
 //
 //  Created by Tong Lin on 2/22/18.
@@ -7,11 +7,16 @@
 //
 
 import UIKit
-//base view controller
-class SuperViewController: UIViewController {
+
+class baseViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = UIColor.white
+        viewAppearanceSetup()
+    }
+    
+    func viewAppearanceSetup() {
+        self.view.backgroundColor = .lightGray
     }
 }
