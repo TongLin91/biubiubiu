@@ -24,8 +24,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func appFireUp() {
+        let storyboard = UIStoryboard(name: "BaseTabBarViewController", bundle: nil)
+        
         self.window = UIWindow(frame: UIScreen.main.bounds)
-        self.window?.rootViewController = ChatWireframe().viewController
+        self.window?.rootViewController = storyboard.instantiateInitialViewController() as! BaseTabBarViewController
         self.window?.makeKeyAndVisible()
     }
     

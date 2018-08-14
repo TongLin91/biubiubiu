@@ -13,7 +13,7 @@
 		065394F2205AEAAE00887489 /* BiuMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065394F1205AEAAE00887489 /* BiuMessage.swift */; };
 		065394FB205C599900887489 /* BiuNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065394FA205C599900887489 /* BiuNetworkManager.swift */; };
 		065DCCDE210FA76C003FC6AF /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065DCCDD210FA76C003FC6AF /* ChatViewController.swift */; };
-		065DCCE0210FA794003FC6AF /* ChatStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 065DCCDF210FA794003FC6AF /* ChatStoryboard.storyboard */; };
+		065DCCE0210FA794003FC6AF /* ChatViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 065DCCDF210FA794003FC6AF /* ChatViewController.storyboard */; };
 		065DCCE2210FA828003FC6AF /* ChatWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065DCCE1210FA828003FC6AF /* ChatWireframe.swift */; };
 		065DCCEE210FA908003FC6AF /* ChatEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065DCCED210FA908003FC6AF /* ChatEventHandler.swift */; };
 		065DCCF0210FA9A9003FC6AF /* ChatInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065DCCEF210FA9A9003FC6AF /* ChatInteractor.swift */; };
@@ -22,7 +22,15 @@
 		065DCCF72110EE00003FC6AF /* ContactWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065DCCF62110EE00003FC6AF /* ContactWireframe.swift */; };
 		065DCCF92110EE30003FC6AF /* ContactEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065DCCF82110EE30003FC6AF /* ContactEventHandler.swift */; };
 		065DCCFB2110EE70003FC6AF /* ContactInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065DCCFA2110EE70003FC6AF /* ContactInteractor.swift */; };
-		065DCCFD2110EEB4003FC6AF /* ContactStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 065DCCFC2110EEB4003FC6AF /* ContactStoryboard.storyboard */; };
+		065DCCFD2110EEB4003FC6AF /* ContactViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 065DCCFC2110EEB4003FC6AF /* ContactViewController.storyboard */; };
+		065DCD0121110146003FC6AF /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065DCD0021110146003FC6AF /* TabBar.swift */; };
+		065DCD052111021F003FC6AF /* BaseTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065DCD042111021F003FC6AF /* BaseTabBarViewController.swift */; };
+		065DCD07211103AC003FC6AF /* BaseTabBarViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 065DCD06211103AC003FC6AF /* BaseTabBarViewController.storyboard */; };
+		065DCD102112043C003FC6AF /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065DCD0F2112043C003FC6AF /* ProfileViewController.swift */; };
+		065DCD1221120449003FC6AF /* ProfileViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 065DCD1121120449003FC6AF /* ProfileViewController.storyboard */; };
+		065DCD142112047C003FC6AF /* ProfileWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065DCD132112047C003FC6AF /* ProfileWireframe.swift */; };
+		065DCD162112048F003FC6AF /* ProfileEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065DCD152112048F003FC6AF /* ProfileEventHandler.swift */; };
+		065DCD182112049E003FC6AF /* ProfileInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 065DCD172112049E003FC6AF /* ProfileInteractor.swift */; };
 		06ACF868203F611E00FACA7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06ACF867203F611E00FACA7C /* AppDelegate.swift */; };
 		06ACF86D203F611E00FACA7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06ACF86B203F611E00FACA7C /* Main.storyboard */; };
 		06ACF870203F611E00FACA7C /* biubiubiu.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 06ACF86E203F611E00FACA7C /* biubiubiu.xcdatamodeld */; };
@@ -62,7 +70,7 @@
 		065394F1205AEAAE00887489 /* BiuMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiuMessage.swift; sourceTree = "<group>"; };
 		065394FA205C599900887489 /* BiuNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiuNetworkManager.swift; sourceTree = "<group>"; };
 		065DCCDD210FA76C003FC6AF /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
-		065DCCDF210FA794003FC6AF /* ChatStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChatStoryboard.storyboard; sourceTree = "<group>"; };
+		065DCCDF210FA794003FC6AF /* ChatViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChatViewController.storyboard; sourceTree = "<group>"; };
 		065DCCE1210FA828003FC6AF /* ChatWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatWireframe.swift; sourceTree = "<group>"; };
 		065DCCED210FA908003FC6AF /* ChatEventHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatEventHandler.swift; sourceTree = "<group>"; };
 		065DCCEF210FA9A9003FC6AF /* ChatInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInteractor.swift; sourceTree = "<group>"; };
@@ -71,7 +79,15 @@
 		065DCCF62110EE00003FC6AF /* ContactWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactWireframe.swift; sourceTree = "<group>"; };
 		065DCCF82110EE30003FC6AF /* ContactEventHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactEventHandler.swift; sourceTree = "<group>"; };
 		065DCCFA2110EE70003FC6AF /* ContactInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactInteractor.swift; sourceTree = "<group>"; };
-		065DCCFC2110EEB4003FC6AF /* ContactStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ContactStoryboard.storyboard; sourceTree = "<group>"; };
+		065DCCFC2110EEB4003FC6AF /* ContactViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ContactViewController.storyboard; sourceTree = "<group>"; };
+		065DCD0021110146003FC6AF /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		065DCD042111021F003FC6AF /* BaseTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarViewController.swift; sourceTree = "<group>"; };
+		065DCD06211103AC003FC6AF /* BaseTabBarViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BaseTabBarViewController.storyboard; sourceTree = "<group>"; };
+		065DCD0F2112043C003FC6AF /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		065DCD1121120449003FC6AF /* ProfileViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProfileViewController.storyboard; sourceTree = "<group>"; };
+		065DCD132112047C003FC6AF /* ProfileWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileWireframe.swift; sourceTree = "<group>"; };
+		065DCD152112048F003FC6AF /* ProfileEventHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEventHandler.swift; sourceTree = "<group>"; };
+		065DCD172112049E003FC6AF /* ProfileInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInteractor.swift; sourceTree = "<group>"; };
 		06ACF864203F611E00FACA7C /* biubiubiu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = biubiubiu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06ACF867203F611E00FACA7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		06ACF86C203F611E00FACA7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -141,7 +157,7 @@
 				065DCCED210FA908003FC6AF /* ChatEventHandler.swift */,
 				065DCCEF210FA9A9003FC6AF /* ChatInteractor.swift */,
 				065DCCDD210FA76C003FC6AF /* ChatViewController.swift */,
-				065DCCDF210FA794003FC6AF /* ChatStoryboard.storyboard */,
+				065DCCDF210FA794003FC6AF /* ChatViewController.storyboard */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -153,9 +169,41 @@
 				065DCCF82110EE30003FC6AF /* ContactEventHandler.swift */,
 				065DCCFA2110EE70003FC6AF /* ContactInteractor.swift */,
 				065DCCF42110EDBD003FC6AF /* ContactViewController.swift */,
-				065DCCFC2110EEB4003FC6AF /* ContactStoryboard.storyboard */,
+				065DCCFC2110EEB4003FC6AF /* ContactViewController.storyboard */,
 			);
 			path = Contact;
+			sourceTree = "<group>";
+		};
+		065DCCFE2110FE89003FC6AF /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				065394FA205C599900887489 /* BiuNetworkManager.swift */,
+				065394E7205882AD00887489 /* UserCacheManager.swift */,
+				06E3FE4B20534F2800F1FAD6 /* Codable+Helper.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		065DCCFF21110125003FC6AF /* Tab Bar View */ = {
+			isa = PBXGroup;
+			children = (
+				065DCD0021110146003FC6AF /* TabBar.swift */,
+				065DCD042111021F003FC6AF /* BaseTabBarViewController.swift */,
+				065DCD06211103AC003FC6AF /* BaseTabBarViewController.storyboard */,
+			);
+			path = "Tab Bar View";
+			sourceTree = "<group>";
+		};
+		065DCD0E21120410003FC6AF /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				065DCD132112047C003FC6AF /* ProfileWireframe.swift */,
+				065DCD152112048F003FC6AF /* ProfileEventHandler.swift */,
+				065DCD172112049E003FC6AF /* ProfileInteractor.swift */,
+				065DCD0F2112043C003FC6AF /* ProfileViewController.swift */,
+				065DCD1121120449003FC6AF /* ProfileViewController.storyboard */,
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		06ACF85B203F611E00FACA7C = {
@@ -184,14 +232,12 @@
 			isa = PBXGroup;
 			children = (
 				06ACF867203F611E00FACA7C /* AppDelegate.swift */,
-				065394FA205C599900887489 /* BiuNetworkManager.swift */,
-				065394E7205882AD00887489 /* UserCacheManager.swift */,
 				06E3FE3B2051B00700F1FAD6 /* BiuUser.swift */,
+				065DCCFE2110FE89003FC6AF /* Utilities */,
 				065394EF205AE97500887489 /* BiuRoom.swift */,
 				065394F1205AEAAE00887489 /* BiuMessage.swift */,
-				06E3FE4B20534F2800F1FAD6 /* Codable+Helper.swift */,
 				06E3FE3A2051AFE400F1FAD6 /* Modules */,
-				06ACF89B203F664600FACA7C /* Base Models */,
+				06ACF89B203F664600FACA7C /* Base Modules */,
 				06ACF89A203F661400FACA7C /* Support Files */,
 			);
 			path = biubiubiu;
@@ -228,18 +274,20 @@
 			name = "Support Files";
 			sourceTree = "<group>";
 		};
-		06ACF89B203F664600FACA7C /* Base Models */ = {
+		06ACF89B203F664600FACA7C /* Base Modules */ = {
 			isa = PBXGroup;
 			children = (
 				065394DB20587BF200887489 /* BaseViewController.swift */,
 				065DCCF1210FB0FD003FC6AF /* BaseWireframe.swift */,
+				065DCCFF21110125003FC6AF /* Tab Bar View */,
 			);
-			path = "Base Models";
+			path = "Base Modules";
 			sourceTree = "<group>";
 		};
 		06E3FE3A2051AFE400F1FAD6 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				065DCD0E21120410003FC6AF /* Profile */,
 				065DCCF32110ED6E003FC6AF /* Contact */,
 				065DCCDC210FA71E003FC6AF /* Chat */,
 				065DCCDB210FA70E003FC6AF /* Login */,
@@ -386,12 +434,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				065DCCFD2110EEB4003FC6AF /* ContactStoryboard.storyboard in Resources */,
+				065DCCFD2110EEB4003FC6AF /* ContactViewController.storyboard in Resources */,
 				06ACF875203F611E00FACA7C /* LaunchScreen.storyboard in Resources */,
 				06ACF872203F611E00FACA7C /* Assets.xcassets in Resources */,
 				06ACF86D203F611E00FACA7C /* Main.storyboard in Resources */,
+				065DCD07211103AC003FC6AF /* BaseTabBarViewController.storyboard in Resources */,
 				06ACF899203F630B00FACA7C /* GoogleService-Info.plist in Resources */,
-				065DCCE0210FA794003FC6AF /* ChatStoryboard.storyboard in Resources */,
+				065DCD1221120449003FC6AF /* ProfileViewController.storyboard in Resources */,
+				065DCCE0210FA794003FC6AF /* ChatViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -574,6 +624,9 @@
 			files = (
 				06E3FE4C20534F2800F1FAD6 /* Codable+Helper.swift in Sources */,
 				065394DC20587BF200887489 /* BaseViewController.swift in Sources */,
+				065DCD142112047C003FC6AF /* ProfileWireframe.swift in Sources */,
+				065DCD0121110146003FC6AF /* TabBar.swift in Sources */,
+				065DCD052111021F003FC6AF /* BaseTabBarViewController.swift in Sources */,
 				065394E8205882AD00887489 /* UserCacheManager.swift in Sources */,
 				065DCCF92110EE30003FC6AF /* ContactEventHandler.swift in Sources */,
 				06ACF868203F611E00FACA7C /* AppDelegate.swift in Sources */,
@@ -588,8 +641,11 @@
 				065DCCEE210FA908003FC6AF /* ChatEventHandler.swift in Sources */,
 				06E3FE3C2051B00700F1FAD6 /* BiuUser.swift in Sources */,
 				065DCCF52110EDBD003FC6AF /* ContactViewController.swift in Sources */,
+				065DCD102112043C003FC6AF /* ProfileViewController.swift in Sources */,
 				065DCCF72110EE00003FC6AF /* ContactWireframe.swift in Sources */,
 				065DCCFB2110EE70003FC6AF /* ContactInteractor.swift in Sources */,
+				065DCD182112049E003FC6AF /* ProfileInteractor.swift in Sources */,
+				065DCD162112048F003FC6AF /* ProfileEventHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

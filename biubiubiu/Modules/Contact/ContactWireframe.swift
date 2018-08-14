@@ -10,16 +10,15 @@ import UIKit
 
 final class ContactWireframe: BaseWireframe {
     
-    private let storyboard = UIStoryboard(name: "ContactStoryboard", bundle: nil)
+    private let storyboard = UIStoryboard(name: "ContactViewController", bundle: nil)
     
     // MARK: - Module setup -
     
     init() {
-        let moduleViewController = storyboard.instantiateViewController(withIdentifier: "ContactViewControllerIdentifier") as! ContactViewController
+        let navigationController = storyboard.instantiateInitialViewController() as! UINavigationController
+        let moduleViewController = navigationController.topViewController as! ContactViewController
         super.init(viewController: moduleViewController)
-        
-        let interactor = ContactInteractor()
-        let eventHandler = ContactEventHandler(viewController: moduleViewController, interactor: interactor, wireframe: self)
+        let eventHandler = ContactEventHandler(viewController: moduleViewController, interactor: ContactInteractor(), wireframe: self)
         moduleViewController.eventHandler = eventHandler
     }
     

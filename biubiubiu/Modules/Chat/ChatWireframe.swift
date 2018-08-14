@@ -10,12 +10,13 @@ import UIKit
 
 final class ChatWireframe: BaseWireframe {
     
-    private let storyboard = UIStoryboard(name: "ChatStoryboard", bundle: nil)
+    private let storyboard = UIStoryboard(name: "ChatViewController", bundle: nil)
     
     // MARK: - Module setup -
     
     init() {
-        let moduleViewController = storyboard.instantiateViewController(withIdentifier: "ChatViewControllerIdentifier") as! ChatViewController
+        let navigationController = storyboard.instantiateInitialViewController() as! UINavigationController
+        let moduleViewController = navigationController.topViewController as! ChatViewController
         super.init(viewController: moduleViewController)
         
         let interactor = ChatInteractor()
