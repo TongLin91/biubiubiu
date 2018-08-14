@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tAI-Ho-A55">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="nRH-L1-8a1">
+            <objects>
+                <viewController id="tAI-Ho-A55" customClass="LoginViewController" customModule="biubiubiu" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I2n-s1-HDH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="21F-yE-Iay">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Hg-fm-MJB">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="562.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="5Hg-fm-MJB" secondAttribute="height" multiplier="1:1.5" id="6Tw-ie-nAQ"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="xf2-Lz-27i">
+                                        <rect key="frame" x="8" y="570.5" width="359" height="68.5"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TnJ-I8-qvm">
+                                                <rect key="frame" x="0.0" y="19.5" width="187" height="30"/>
+                                                <state key="normal" title="Login"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QXx-hc-pDe">
+                                                <rect key="frame" x="187" y="19.5" width="172" height="30"/>
+                                                <state key="normal" title="Scan"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="xf2-Lz-27i" firstAttribute="top" secondItem="5Hg-fm-MJB" secondAttribute="bottom" constant="8" id="C1E-E6-uua"/>
+                                    <constraint firstAttribute="trailing" secondItem="5Hg-fm-MJB" secondAttribute="trailing" id="JFv-kL-zGW"/>
+                                    <constraint firstItem="5Hg-fm-MJB" firstAttribute="leading" secondItem="21F-yE-Iay" secondAttribute="leading" id="PKk-qF-hJ6"/>
+                                    <constraint firstAttribute="trailing" secondItem="xf2-Lz-27i" secondAttribute="trailing" constant="8" id="b5j-Pv-Y1c"/>
+                                    <constraint firstAttribute="bottom" secondItem="xf2-Lz-27i" secondAttribute="bottom" constant="8" id="d7R-Ff-dlf"/>
+                                    <constraint firstItem="5Hg-fm-MJB" firstAttribute="top" secondItem="21F-yE-Iay" secondAttribute="top" id="sJH-gX-NhZ"/>
+                                    <constraint firstItem="xf2-Lz-27i" firstAttribute="leading" secondItem="21F-yE-Iay" secondAttribute="leading" constant="8" id="utn-Dk-lGh"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="21F-yE-Iay" firstAttribute="leading" secondItem="3Dl-n8-CWs" secondAttribute="leading" id="7Uj-Qu-YNp"/>
+                            <constraint firstItem="21F-yE-Iay" firstAttribute="top" secondItem="3Dl-n8-CWs" secondAttribute="top" id="Nj5-po-u4y"/>
+                            <constraint firstItem="3Dl-n8-CWs" firstAttribute="trailing" secondItem="21F-yE-Iay" secondAttribute="trailing" id="Qgj-10-U3z"/>
+                            <constraint firstItem="3Dl-n8-CWs" firstAttribute="bottom" secondItem="21F-yE-Iay" secondAttribute="bottom" id="a0d-TT-Ey8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3Dl-n8-CWs"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Enq-UR-Rv1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="81" y="149"/>
+        </scene>
+    </scenes>
+</document>
