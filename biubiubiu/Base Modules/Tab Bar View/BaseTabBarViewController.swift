@@ -34,7 +34,7 @@ class BaseTabBarViewController: UITabBarController {
     private func setup() {
         delegate = self
         
-        let homeVC = ChatWireframe().viewController
+        let homeVC = HomeWireframe().navigationController!
         homeVC.tabBarItem = UITabBarItem(title: "Home", image: nil, selectedImage: nil)
         let contactVC = ContactWireframe().navigationController!
         contactVC.tabBarItem =  UITabBarItem(title: "Contacts", image: nil, selectedImage: nil)

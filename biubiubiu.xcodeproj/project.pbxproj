@@ -41,6 +41,11 @@
 		06ACF899203F630B00FACA7C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 06ACF898203F630B00FACA7C /* GoogleService-Info.plist */; };
 		06E3FE3C2051B00700F1FAD6 /* BiuUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E3FE3B2051B00700F1FAD6 /* BiuUser.swift */; };
 		06E3FE4C20534F2800F1FAD6 /* Codable+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06E3FE4B20534F2800F1FAD6 /* Codable+Helper.swift */; };
+		06FB19552123223100A42B26 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FB19542123223100A42B26 /* HomeViewController.swift */; };
+		06FB19572123224000A42B26 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 06FB19562123224000A42B26 /* HomeViewController.storyboard */; };
+		06FB19592123225200A42B26 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FB19582123225200A42B26 /* HomeInteractor.swift */; };
+		06FB195B2123226000A42B26 /* HomeWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FB195A2123226000A42B26 /* HomeWireframe.swift */; };
+		06FB195D2123227100A42B26 /* HomeEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06FB195C2123227100A42B26 /* HomeEventHandler.swift */; };
 		47C0750AF81CC1FECC119C90 /* Pods_biubiubiu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 841FA6FE85EDD39153E09B14 /* Pods_biubiubiu.framework */; };
 		588EC76907E5B74472AD2C93 /* Pods_biubiubiuTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C3421C6CA03DFF27D0C6795 /* Pods_biubiubiuTests.framework */; };
 		AF3EF5C291114F1B50211FCF /* Pods_biubiubiuUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F851FAC0658FA7D525F44698 /* Pods_biubiubiuUITests.framework */; };
@@ -104,6 +109,11 @@
 		06ACF898203F630B00FACA7C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		06E3FE3B2051B00700F1FAD6 /* BiuUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiuUser.swift; sourceTree = "<group>"; };
 		06E3FE4B20534F2800F1FAD6 /* Codable+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Codable+Helper.swift"; sourceTree = "<group>"; };
+		06FB19542123223100A42B26 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		06FB19562123224000A42B26 /* HomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
+		06FB19582123225200A42B26 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		06FB195A2123226000A42B26 /* HomeWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWireframe.swift; sourceTree = "<group>"; };
+		06FB195C2123227100A42B26 /* HomeEventHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEventHandler.swift; sourceTree = "<group>"; };
 		0A4B9BAB328FA0D27A65D758 /* Pods-biubiubiu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-biubiubiu.release.xcconfig"; path = "Pods/Target Support Files/Pods-biubiubiu/Pods-biubiubiu.release.xcconfig"; sourceTree = "<group>"; };
 		58F2C55483E1886A8E7E45E1 /* Pods-biubiubiuUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-biubiubiuUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-biubiubiuUITests/Pods-biubiubiuUITests.release.xcconfig"; sourceTree = "<group>"; };
 		78E7ABD82F3C76660B107D57 /* Pods-biubiubiuUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-biubiubiuUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-biubiubiuUITests/Pods-biubiubiuUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -233,9 +243,9 @@
 			children = (
 				06ACF867203F611E00FACA7C /* AppDelegate.swift */,
 				06E3FE3B2051B00700F1FAD6 /* BiuUser.swift */,
-				065DCCFE2110FE89003FC6AF /* Utilities */,
 				065394EF205AE97500887489 /* BiuRoom.swift */,
 				065394F1205AEAAE00887489 /* BiuMessage.swift */,
+				065DCCFE2110FE89003FC6AF /* Utilities */,
 				06E3FE3A2051AFE400F1FAD6 /* Modules */,
 				06ACF89B203F664600FACA7C /* Base Modules */,
 				06ACF89A203F661400FACA7C /* Support Files */,
@@ -287,12 +297,25 @@
 		06E3FE3A2051AFE400F1FAD6 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				06FB19532123220900A42B26 /* Home */,
 				065DCD0E21120410003FC6AF /* Profile */,
 				065DCCF32110ED6E003FC6AF /* Contact */,
 				065DCCDC210FA71E003FC6AF /* Chat */,
 				065DCCDB210FA70E003FC6AF /* Login */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		06FB19532123220900A42B26 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				06FB195A2123226000A42B26 /* HomeWireframe.swift */,
+				06FB195C2123227100A42B26 /* HomeEventHandler.swift */,
+				06FB19582123225200A42B26 /* HomeInteractor.swift */,
+				06FB19542123223100A42B26 /* HomeViewController.swift */,
+				06FB19562123224000A42B26 /* HomeViewController.storyboard */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		1E1013ED7390A10AC147EC5E /* Pods */ = {
@@ -439,6 +462,7 @@
 				06ACF872203F611E00FACA7C /* Assets.xcassets in Resources */,
 				06ACF86D203F611E00FACA7C /* Main.storyboard in Resources */,
 				065DCD07211103AC003FC6AF /* BaseTabBarViewController.storyboard in Resources */,
+				06FB19572123224000A42B26 /* HomeViewController.storyboard in Resources */,
 				06ACF899203F630B00FACA7C /* GoogleService-Info.plist in Resources */,
 				065DCD1221120449003FC6AF /* ProfileViewController.storyboard in Resources */,
 				065DCCE0210FA794003FC6AF /* ChatViewController.storyboard in Resources */,
@@ -622,12 +646,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06FB19552123223100A42B26 /* HomeViewController.swift in Sources */,
 				06E3FE4C20534F2800F1FAD6 /* Codable+Helper.swift in Sources */,
 				065394DC20587BF200887489 /* BaseViewController.swift in Sources */,
 				065DCD142112047C003FC6AF /* ProfileWireframe.swift in Sources */,
 				065DCD0121110146003FC6AF /* TabBar.swift in Sources */,
+				06FB195B2123226000A42B26 /* HomeWireframe.swift in Sources */,
 				065DCD052111021F003FC6AF /* BaseTabBarViewController.swift in Sources */,
 				065394E8205882AD00887489 /* UserCacheManager.swift in Sources */,
+				06FB19592123225200A42B26 /* HomeInteractor.swift in Sources */,
 				065DCCF92110EE30003FC6AF /* ContactEventHandler.swift in Sources */,
 				06ACF868203F611E00FACA7C /* AppDelegate.swift in Sources */,
 				065394F0205AE97500887489 /* BiuRoom.swift in Sources */,
@@ -641,6 +668,7 @@
 				065DCCEE210FA908003FC6AF /* ChatEventHandler.swift in Sources */,
 				06E3FE3C2051B00700F1FAD6 /* BiuUser.swift in Sources */,
 				065DCCF52110EDBD003FC6AF /* ContactViewController.swift in Sources */,
+				06FB195D2123227100A42B26 /* HomeEventHandler.swift in Sources */,
 				065DCD102112043C003FC6AF /* ProfileViewController.swift in Sources */,
 				065DCCF72110EE00003FC6AF /* ContactWireframe.swift in Sources */,
 				065DCCFB2110EE70003FC6AF /* ContactInteractor.swift in Sources */,

@@ -12,11 +12,14 @@ class BaseViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         viewAppearanceSetup()
     }
     
     func viewAppearanceSetup() {
         self.view.backgroundColor = .lightGray
+        self.tabBarController?.tabBar.isHidden = false
     }
 }

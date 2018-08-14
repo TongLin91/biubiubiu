@@ -15,6 +15,12 @@ class ChatViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.tabBarController?.tabBar.isHidden = true
+    }
 }
 
 extension ChatViewController: UITextFieldDelegate {
@@ -72,7 +78,7 @@ extension ChatViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ChatCellIdentifier", for: indexPath)
-        cell.backgroundColor = (indexPath.row%2 == 0) ? .red : .blue
+        cell.backgroundColor = (indexPath.row%2 == 0) ? .gray : .lightGray
         return cell
     }
 }

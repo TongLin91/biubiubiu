@@ -20,6 +20,7 @@ class ContactViewController: BaseViewController {
 extension ContactViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         // go to chat view
+        eventHandler.gotoChat(BiuUser(name: "someone", invitedBy: "no one"))
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -34,7 +35,7 @@ extension ContactViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ContactCellIdentifier", for: indexPath)
-        cell.backgroundColor = (indexPath.row%2 == 0) ? .red : .blue
+        cell.backgroundColor = (indexPath.row%2 == 0) ? .gray : .lightGray
         return cell
     }
 }

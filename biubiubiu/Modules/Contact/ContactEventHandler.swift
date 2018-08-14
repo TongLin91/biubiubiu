@@ -18,6 +18,11 @@ final class ContactEventHandler {
         self.viewController = viewController
         self.interactor = interactor
         self.wireframe = wireframe
-        
+    }
+}
+
+extension ContactEventHandler {
+    func gotoChat(_ user: BiuUser) {
+        wireframe.show(ChatWireframe().viewController, with: .push, animated: true)
     }
 }
