@@ -16,14 +16,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        FirebaseApp.configure()
-        signInAnonymously()
-//        self.appFireUp()
-        ioslateUser()
+        launchConfigure()
         return true
     }
     
-    func ioslateUser() {
+    private func launchConfigure() {
+        FirebaseApp.configure()
+        signInAnonymously()
+    }
+    
+    func login() {
+        BiuNetworkManager.fetchUserInfo { (response) in
+            if let user = response.data {
+                UserCacheManager.saveUserData(user)
+                self.appFireUp()
+            } else {
+                self.isolateUser()
+            }
+        }
+    }
+    
+    func isolateUser() {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window?.rootViewController = LoginWireframe().viewController
         self.window?.makeKeyAndVisible()
@@ -39,7 +52,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func signInAnonymously() {
         Auth.auth().signInAnonymously { (_, error) in
-            print(error?.localizedDescription ?? "login success")
+            guard let error = error else {
+                self.login()
+                return
+            }
+            print(error.localizedDescription)
+            self.isolateUser()
         }
     }
     

@@ -10,14 +10,13 @@ import Foundation
 import UIKit
 import FirebaseDatabase
 
-class BiuNetworkManager {
-    static let shared = BiuNetworkManager()
+final class BiuNetworkManager {
     
-    private let dbRef = Database.database().reference()
-    private let userRootRef = "BiuPlayer"
-    private let roomRootRef = "BiuRooms"
+    static private let dbRef = Database.database().reference()
+    static private let userRootRef = "BiuPlayer"
+    static private let roomRootRef = "BiuRooms"
     
-    func fetchUserInfo(_ completion: @escaping (BiuResponse)->()) {
+    static func fetchUserInfo(_ completion: @escaping (BiuResponse)->()) {
         dbRef.child(userRootRef).child(UIDevice.current.identifierForVendor!.uuidString).observeSingleEvent(of: .value, with: { (snapshot) in
             if snapshot.exists() {
                 completion(BiuResponse(error: nil, data: snapshot.value))
@@ -29,7 +28,7 @@ class BiuNetworkManager {
         }
     }
     
-    func registerNewUser(_ newUser: BiuUser, completion: @escaping (BiuResponse)->()) {
+    static func registerNewUser(_ newUser: BiuUser, completion: @escaping (BiuResponse)->()) {
         dbRef.child(userRootRef).child(UIDevice.current.identifierForVendor!.uuidString).setValue(newUser.dictionary) { (error, _) in
             
             if let error = error {
@@ -40,7 +39,7 @@ class BiuNetworkManager {
         }
     }
     
-    func fetchAllRooms(_ completion: @escaping (BiuResponse)->()) {
+    static func fetchAllRooms(_ completion: @escaping (BiuResponse)->()) {
         dbRef.child(roomRootRef).observeSingleEvent(of: .value, with: { (snapshot) in
             if snapshot.exists() {
                 completion(BiuResponse(error: nil, data: snapshot.value))
